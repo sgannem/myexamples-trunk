@@ -1,11 +1,5 @@
 package com.xyz;
 
-/**
- * Default method in jdk1.8
- * 
- * @author sgann1
- *
- */
 
 interface Person {
     //adds a java 8 default method
