@@ -14,7 +14,7 @@ interface LoginConstants extends Constants {
  
 public class Main {
     public static void main(String[] args) {
-        LoginConstants constants = (LoginConstants)DynamicProperty.create(LoginConstants.class);
+        LoginConstants constants = DynamicProperty.create(LoginConstants.class);
 //        try{
 //        System.out.println(constants);
 //        }catch(Exception e) {
