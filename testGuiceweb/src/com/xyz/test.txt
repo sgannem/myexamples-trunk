@@ -1,0 +1,85 @@
+- Welcome 
+- System Overview
+- Live Demo (optional) – Not requried.
+- Technology Stack – Identify unclear components.
+- Source Tree Overview
+
+- Source Code in Detail – Srinivasu to identify the questions.
+ - Module "market": The Web Applications -
+ - Module "store": The WebSocket Server
+ - Module "communication": Protocol Buffers Messages
+- Android App - 
+- Cryptography, Keys
+
+
+
+new Agenda:
+
+- Welcome
+  (1) Introduction.
+
+- Highlevel Appstore System Architecture
+   (1) Appstore DB design
+   (2) Appstore User Management
+   (3) Appstore Key Management and Cryptography.
+   (4) Appstore User Roles & session Management.
+   (5) Appstore Transaction Management.
+   (6) Appstore Application life cycle Management.
+   (7) Appstore Application Distribution Management.
+   (8) Appstore Email Engine design architecture.
+   (9) Android Appstore NDEF design architecture.
+   (10) Appstore RESTful services design architecture.
+   (11) Appstore MVC design architecture.
+  
+
+- Technology Stack:
+  (1) Appstore Guice Dependency management design Architecture.
+  (2) Appstore Wesocket design Architecture.
+  (3) Appstore MBean design Archicture.
+  (4) Appstore Quartz Schedular design architecture.
+  (5) Appstore Proto buffer Message exchange design architecture.
+  (6) Appstore JPA design architecture.
+  (7) Appstore Android App to Backend Market application(s) communication design architecure.
+  (8) Appstore JAXRS RESTful design Architecture.
+  (9) Appstore Java Script UI pages design Architecture.
+
+- Source Tree Overview
+  (1) appstore Maven Module(s) architecture.
+  (2) Maven Appstore Repository archicture.
+  (3) Maven plugin architecture for Google Proto buffer, liquibase & etc. 
+  (4) Appstore Gradle modules architecture.
+
+
+- Source Code in Detail
+   (1) Module "market": The Web Applications -
+   (2) Module "store": The WebSocket Server
+   (3) Module "communication": Protocol Buffers Messages
+   (4) Android App
+   (5) Cryptography, Keys
+
+
+ -- Appstore Testing
+  1) individual Appstore modules test design architecture.
+  2) Appstore Android App test design architecture.
+
+ 
+
+-- Performance & Security Enhancements:
+
+  1) Enforcing Security in RESTful APIs.
+     a) MAC based authentication.
+     b) Encrypted Payload.
+     c) Role based authentication.
+     d) Two way SSL.
+  2) Scalling up Response times for APIs and websocket communication
+     a) By horizonal scalling
+     b) Clustering. 
+  
+
+-- Enhancement(s).
+  1) Appstore future enhancements 
+     a) Adaptibility of Appstore to support EV1 and other Mifare family cards.
+     b) how efficient is Appstore framework for plugibility of new features.
+  
+
+
