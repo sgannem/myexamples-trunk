@@ -1,0 +1,20 @@
+//System varaibles shown in blue. These will be replaced with their corresponding values.
+/******************************************************************************/
+/* Copyright 2014 Zelix Pty Ltd (ACN 078 740 093)                             */
+/*                                                                            */
+/* Zelix KlassMaster default exclude statement. Leave this file in the        */
+/* directory from which you start Zelix KlassMaster or specify its location   */
+/* using the "-de" command line option. It determines the default name        */
+/* exclusions.                                                                */
+/******************************************************************************/
+
+open      "%project.build.directory%%file.separator%%project.build.finalName%.%project.packaging%";
+
+//obfuscate   keepInnerClassInfo=false
+//            keepGenericsInfo=%myProperty0%
+//            obfuscateFlow=aggressive
+//            exceptionObfuscation=heavy
+//            encryptStringLiterals=flowObfuscate
+//            ;
+            
+saveAll   "%project.build.directory%";

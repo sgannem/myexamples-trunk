@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="max_length_of_email_address_is_254.xml">
+
+  <changeSet author="az" id="set max length of administrator.email to 254">
+    <modifyDataType tableName="administrator" columnName="email" newDataType="VARCHAR(254)"/>
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="set max length of applicationprovider.email to 254">
+    <modifyDataType tableName="applicationprovider" columnName="email" newDataType="VARCHAR(254)"/>
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="set max length of cardissuer.email to 254">
+    <modifyDataType tableName="cardissuer" columnName="email" newDataType="VARCHAR(254)"/>
+    <rollback/>
+  </changeSet>
+</databaseChangeLog>

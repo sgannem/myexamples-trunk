@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>testform</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+	<security-constraint>
+		<display-name>AppMarket public resources</display-name>
+
+		<web-resource-collection>
+			<web-resource-name>AppMarket public Area</web-resource-name>
+			<!-- JS -->
+			<url-pattern>/js/jquery-3.0.0.js</url-pattern>
+		</web-resource-collection>
+	</security-constraint>
+
+	<security-constraint>
+		<display-name>AppMarket internal resources</display-name>
+
+		<web-resource-collection>
+			<web-resource-name>AppMarket internal Area</web-resource-name>
+
+			<!-- HTML -->
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+
+		<auth-constraint>
+			<role-name>Administrator</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<realm-name>AppMarket</realm-name>
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/error-login.html</form-error-page>
+		</form-login-config>
+	</login-config>
+
+</web-app>

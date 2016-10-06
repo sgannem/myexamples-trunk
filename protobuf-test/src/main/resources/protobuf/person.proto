@@ -1,0 +1,6 @@
+package com.xyz.protobuf;
+
+
+message Person {
+ required string id=1;
+ }

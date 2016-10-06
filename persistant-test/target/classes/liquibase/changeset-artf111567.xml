@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf11567.xml">
+
+
+  <changeSet author="gm" id="add columns for card issuer login">
+    <addColumn tableName="cardissuer">
+      <column name="username" type="varchar(50)"/>
+    </addColumn>
+
+    <addColumn tableName="cardissuer">
+      <column name="passwordhash" type="BYTEA"/>
+    </addColumn>
+
+    <addColumn tableName="cardissuer">
+      <column name="salt" type="BYTEA" defaultValue="\x00000000000000000000000000000000"/>
+    </addColumn>
+
+    <addColumn tableName="cardissuer">
+      <column name="iterations" type="INT" defaultValue="8192">
+	    <constraints nullable="false"/>
+	  </column>
+    </addColumn>
+
+    <addUniqueConstraint columnNames="username"
+                         constraintName="const_username_cardissuer"
+                         tableName="cardissuer"/>
+  </changeSet>
+
+  <changeSet author="gm,az" id="create views for tomcat realm">
+    <createView replaceIfExists="true" viewName="login_roles">
+	  SELECT username, 'CardIssuer' AS role FROM cardissuer
+    </createView>
+	
+	<createView replaceIfExists="true" viewName="login_users">
+	  SELECT ci.username, ci.passwordhash, ci.salt, ci.iterations FROM cardissuer ci WHERE ci.passwordhash IS NOT NULL
+    </createView>
+  </changeSet>
+</databaseChangeLog>

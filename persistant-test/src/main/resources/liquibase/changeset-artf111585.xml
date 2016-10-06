@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf11585.xml">
+
+
+  <changeSet author="gm" id="add columns for applicationprovider login">
+    <addColumn tableName="applicationprovider">
+      <column name="username" type="varchar(50)"/>
+    </addColumn>
+
+    <addColumn tableName="applicationprovider">
+      <column name="passwordhash" type="BYTEA"/>
+    </addColumn>
+
+    <addColumn tableName="applicationprovider">
+      <column name="salt" type="BYTEA" defaultValue="\x00000000000000000000000000000000"/>
+    </addColumn>
+
+    <addColumn tableName="applicationprovider">
+      <column name="iterations" type="INT" defaultValue="8192">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+
+    <addUniqueConstraint columnNames="username"
+                         constraintName="const_username_applicationprovider"
+                         tableName="applicationprovider"/>
+  </changeSet>
+
+
+  <changeSet author="gm,az" id="create views for tomcat realm for application provider">
+    <createView replaceIfExists="true" viewName="login_roles">
+      SELECT username, 'CardIssuer' AS role FROM cardissuer UNION SELECT username, 'ApplicationProvider' AS role FROM applicationprovider
+    </createView>
+
+    <createView replaceIfExists="true" viewName="login_users">
+      SELECT ci.username, ci.passwordhash, ci.salt, ci.iterations FROM cardissuer ci WHERE ci.passwordhash IS NOT NULL UNION SELECT
+      ap.username, ap.passwordhash, ap.salt, ap.iterations FROM applicationprovider ap WHERE ap.passwordhash IS NOT NULL
+    </createView>
+  </changeSet>
+
+  <changeSet author="az" id="use hibernates table sequence instead of single database sequences">
+    <dropSequence sequenceName="applicationprovider_sequence"/>
+    <dropSequence sequenceName="approvedapplication_sequence"/>
+    <dropSequence sequenceName="cardissuer_sequence"/>
+
+    <createTable tableName="hibernate_sequences">
+      <column name="sequence_name" type="VARCHAR(255)"/>
+      <column name="next_val" type="BIGINT"/>
+    </createTable>
+
+    <rollback>
+      <dropTable tableName="hibernate_sequences"/>
+
+      <createSequence schemaName="public" sequenceName="applicationprovider_sequence"/>
+      <createSequence schemaName="public" sequenceName="cardissuer_sequence"/>
+      <createSequence schemaName="public" sequenceName="approvedapplication_sequence"/>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="add unique constraint (applicationprovider_id,cardissuer_id) for approvedapplication">
+    <addUniqueConstraint columnNames="applicationprovider_id,cardissuer_id"
+                         constraintName="const_unique_approvedapplication_applicationprovider_id_cardissuer_id"
+                         tableName="approvedapplication"/>
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf110536.xml">
+
+  <changeSet id="az" author="add field applicationprovider.name">
+    <addColumn tableName="applicationprovider">
+      <column name="name" type="VARCHAR(128)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+				   
+  <changeSet id="az" author="add field applicationprovider.countryisocode">
+    <addColumn tableName="applicationprovider">
+      <column name="countryisocode" type="VARCHAR(3)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.industrysectornaicsnr">
+    <addColumn tableName="applicationprovider">
+      <column name="industrysectornaicsnr" type="VARCHAR(5)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.linkedinurl">
+    <addColumn tableName="applicationprovider">
+      <column name="linkedinurl" type="VARCHAR(1024)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.phone">
+    <addColumn tableName="applicationprovider">
+      <column name="phone" type="VARCHAR(50)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.homepage">
+    <addColumn tableName="applicationprovider">
+      <column name="homepage" type="VARCHAR(1024)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.addressname">
+    <addColumn tableName="applicationprovider">
+      <column name="addressname" type="VARCHAR(64)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.addressstreet">
+    <addColumn tableName="applicationprovider">
+      <column name="addressstreet" type="VARCHAR(64)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.addresszipcity">
+    <addColumn tableName="applicationprovider">
+      <column name="addresszipcity" type="VARCHAR(64)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+  
+  <changeSet id="az" author="add field applicationprovider.addresscountry">
+    <addColumn tableName="applicationprovider">
+      <column name="addresscountry" type="VARCHAR(64)">
+	    <constraints nullable="true"/>
+	  </column>
+    </addColumn>
+  </changeSet>
+
+</databaseChangeLog>

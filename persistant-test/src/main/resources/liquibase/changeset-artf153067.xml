@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf153067.xml">
+
+  <changeSet author="az" id="add system property SLOT_QUOTA_SIZES">
+    <insert tableName="systemproperty">
+      <column name="key" value="SLOT_QUOTA_SIZES"/>
+      <column name="value" value="128,256,512,1024"/>
+    </insert>
+
+    <rollback>
+      <delete tableName="systemproperty">
+        <where>key='SLOT_QUOTA_SIZES'</where>
+      </delete>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="add field cardissuer.numberoffixedsizeslots to postgres db" dbms="postgresql">
+    <addColumn tableName="cardissuer">
+      <column name="numberoffixedsizeslots" type="SMALLINT"/>
+    </addColumn>
+  </changeSet>
+
+  <changeSet author="az" id="add field cardissuer.numberoffixedsizeslots to postgres db" dbms="h2">
+    <addColumn tableName="cardissuer">
+      <column name="numberoffixedsizeslots" type="INT"/>
+    </addColumn>
+  </changeSet>
+
+  <changeSet author="az" id="add field cardissuer.sizeoffixedsizeslot" dbms="postgresql">
+    <addColumn tableName="cardissuer">
+      <column name="sizeoffixedsizeslot" type="SMALLINT"/>
+    </addColumn>
+  </changeSet>
+
+  <changeSet author="az" id="add field cardissuer.sizeoffixedsizeslot" dbms="h2">
+    <addColumn tableName="cardissuer">
+      <column name="sizeoffixedsizeslot" type="INT"/>
+    </addColumn>
+  </changeSet>
+</databaseChangeLog>

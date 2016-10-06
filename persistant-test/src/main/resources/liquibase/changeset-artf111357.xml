@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf111357.xml">
+
+  <changeSet author="az" id="set default DAM keys" dbms="postgresql">
+    <update tableName="keyreference">
+      <column name="key" value="\x10101010101010100123456789abcdef"/>
+      <where>id='2'</where>
+    </update>
+
+    <update tableName="keyreference">
+      <column name="key" value="\x11111111111111110123456789abcdef"/>
+      <where>id='3'</where>
+    </update>
+
+    <update tableName="keyreference">
+      <column name="key" value="\x12121212121212120123456789abcdef"/>
+      <where>id='4'</where>
+    </update>
+
+    <update tableName="cardissuer">
+      <column name="damauthkeyref_id" value="2"/>
+      <column name="dammackeyref_id" value="3"/>
+      <column name="damenckeyref_id" value="4"/>
+      <where>damauthkeyref_id IS NULL AND cardtype='EV2'</where>
+    </update>
+
+    <rollback/>
+  </changeSet>
+</databaseChangeLog>

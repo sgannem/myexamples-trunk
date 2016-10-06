@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="add_check_constraints_to_cardissuer.xml">
+
+  <changeSet author="az" id="add constr_cardissuer_ev1_cards" dbms="postgresql">
+    <sql>
+      ALTER TABLE cardissuer
+      ADD CONSTRAINT constr_cardissuer_ev1_cards
+      CHECK
+      ((cardType != 'EV1') OR
+      ((damAuthKeyRef_id IS NULL) AND (damMacKeyRef_id IS NULL) AND (damEncKeyRef_id IS NULL) AND
+      (numberOfFixedSizeSlots IS NULL) AND (sizeOfFixedSizeSlot IS NULL)))
+    </sql>
+
+    <rollback>
+      <sql>
+        ALTER TABLE cardissuer
+        DROP CONSTRAINT constr_cardissuer_ev1_cards
+      </sql>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="add constr_cardissuer_ev2_cards" dbms="postgresql">
+    <sql>
+      ALTER TABLE cardissuer
+      ADD CONSTRAINT constr_cardissuer_ev2_cards
+      CHECK
+      ((cardType != 'EV2') OR (ev1MasterKeyRef_id IS NULL))
+    </sql>
+
+    <rollback>
+      <sql>
+        ALTER TABLE cardissuer
+        DROP CONSTRAINT constr_cardissuer_ev2_cards
+      </sql>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="add constr_cardissuer_dam_keys" dbms="postgresql">
+    <sql>
+      ALTER TABLE cardissuer
+      ADD CONSTRAINT constr_cardissuer_dam_keys
+      CHECK
+      (((damAuthKeyRef_id IS NULL) AND (damMacKeyRef_id IS NULL) AND (damEncKeyRef_id IS NULL)) OR
+      ((damAuthKeyRef_id IS NOT NULL) AND (damMacKeyRef_id IS NOT NULL) AND (damEncKeyRef_id IS NOT NULL)))
+    </sql>
+
+    <rollback>
+      <sql>
+        ALTER TABLE cardissuer
+        DROP CONSTRAINT constr_cardissuer_dam_keys
+      </sql>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="add constr_cardissuer_fixed_size_slot_settings" dbms="postgresql">
+    <sql>
+      ALTER TABLE cardissuer
+      ADD CONSTRAINT constr_cardissuer_fixed_size_slot_settings
+      CHECK
+      (((numberOfFixedSizeSlots IS NULL) AND (sizeOfFixedSizeSlot IS NULL)) OR
+      ((numberOfFixedSizeSlots IS NOT NULL) AND (sizeOfFixedSizeSlot IS NOT NULL)))
+    </sql>
+
+    <rollback>
+      <sql>
+        ALTER TABLE cardissuer
+        DROP CONSTRAINT constr_cardissuer_fixed_size_slot_settings
+      </sql>
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

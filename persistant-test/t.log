@@ -1,0 +1,1493 @@
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T22:11:47+05:30)
+Maven home: C:\nxp\tools\apache-maven-3.3.9\bin\..
+Java version: 1.8.0_77, vendor: Oracle Corporation
+Java home: C:\nxp\java\jdk1.8.0_77\jre
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 7", version: "6.1", arch: "amd64", family: "dos"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from C:\nxp\tools\apache-maven-3.3.9\bin\..\conf\settings.xml
+[DEBUG] Reading user settings from C:\Users\nxa30710\.m2\settings.xml
+[DEBUG] Reading global toolchains from C:\nxp\tools\apache-maven-3.3.9\bin\..\conf\toolchains.xml
+[DEBUG] Reading user toolchains from C:\Users\nxa30710\.m2\toolchains.xml
+[DEBUG] Using local repository at C:\Users\nxa30710\.m2\repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for C:\Users\nxa30710\.m2\repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.xyz:persistant-test:war:0.01-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging war from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.xyz:persistant-test:war:0.01-SNAPSHOT
+[DEBUG] Tasks:   [clean, install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building persistant-test 0.01-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.xyz:persistant-test:0.01-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.liquibase:liquibase-maven-plugin:3.4.1:update (default)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <changeLogFile>${liquibase.changeLogFile}</changeLogFile>
+  <changelogCatalogName>${liquibase.changelogCatalogName}</changelogCatalogName>
+  <changelogSchemaName>${liquibase.changelogSchemaName}</changelogSchemaName>
+  <changesToApply default-value="0">${liquibase.changesToApply}</changesToApply>
+  <clearCheckSums default-value="false">${liquibase.clearCheckSums}</clearCheckSums>
+  <contexts default-value="">${liquibase.contexts}</contexts>
+  <databaseChangeLogLockTableName>${liquibase.databaseChangeLogLockTableName}</databaseChangeLogLockTableName>
+  <databaseChangeLogTableName>${liquibase.databaseChangeLogTableName}</databaseChangeLogTableName>
+  <databaseClass>${liquibase.databaseClass}</databaseClass>
+  <defaultCatalogName>${liquibase.defaultCatalogName}</defaultCatalogName>
+  <defaultSchemaName>${liquibase.defaultSchemaName}</defaultSchemaName>
+  <driver>${liquibase.driver}</driver>
+  <dropFirst default-value="false">${liquibase.dropFirst}</dropFirst>
+  <emptyPassword default-value="false">${liquibase.emptyPassword}</emptyPassword>
+  <includeArtifact default-value="true">${liquibase.includeArtifact}</includeArtifact>
+  <includeTestOutputDirectory default-value="true">${liquibase.includeTestOutputDirectory}</includeTestOutputDirectory>
+  <labels default-value="">${liquibase.labels}</labels>
+  <liquibaseShouldRun>${liquibase.should.run}</liquibaseShouldRun>
+  <logging default-value="INFO">${liquibase.logging}</logging>
+  <outputDefaultCatalog>${liquibase.outputDefaultCatalog}</outputDefaultCatalog>
+  <outputDefaultSchema>${liquibase.outputDefaultSchema}</outputDefaultSchema>
+  <outputFileEncoding>${liquibase.outputFileEncoding}</outputFileEncoding>
+  <password>${liquibase.password}</password>
+  <project>${project}</project>
+  <promptOnNonLocalDatabase default-value="true">${liquibase.promptOnNonLocalDatabase}</promptOnNonLocalDatabase>
+  <propertyFile>src/main/resources/liquibase/liquibase.properties</propertyFile>
+  <propertyFileWillOverride default-value="false">${liquibase.propertyFileWillOverride}</propertyFileWillOverride>
+  <propertyProviderClass>${liquibase.propertyProviderClass}</propertyProviderClass>
+  <server>${liquibase.server}</server>
+  <toTag>${liquibase.toTag}</toTag>
+  <url>${liquibase.url}</url>
+  <username>${liquibase.username}</username>
+  <verbose default-value="false">${liquibase.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution>${mojoExecution}</mojoExecution>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">${maven.compiler.source}</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">${maven.compiler.target}</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+  <mavenSession default-value="${session}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-war-plugin:2.2:war (default-war)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <archiveClasses default-value="false">${archiveClasses}</archiveClasses>
+  <attachClasses default-value="false"/>
+  <cacheFile default-value="${project.build.directory}/war/work/webapp-cache.xml"/>
+  <classesClassifier default-value="classes"/>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <containerConfigXML>${maven.war.containerConfigXML}</containerConfigXML>
+  <escapeString>${maven.war.escapeString}</escapeString>
+  <escapedBackslashesInFilePath default-value="false">${maven.war.escapedBackslashesInFilePath}</escapedBackslashesInFilePath>
+  <failOnMissingWebXml default-value="true">${failOnMissingWebXml}</failOnMissingWebXml>
+  <filteringDeploymentDescriptors default-value="false">${maven.war.filteringDeploymentDescriptors}</filteringDeploymentDescriptors>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <primaryArtifact default-value="true">${primaryArtifact}</primaryArtifact>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <useCache default-value="false">${useCache}</useCache>
+  <warName default-value="${project.build.finalName}"/>
+  <warSourceDirectory default-value="${basedir}/src/main/webapp"/>
+  <warSourceIncludes default-value="**"/>
+  <webXml>${maven.war.webxml}</webXml>
+  <webappDirectory default-value="${project.build.directory}/${project.build.finalName}"/>
+  <workDirectory default-value="${project.build.directory}/war/work"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.4:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] =======================================================================
+[WARNING] The POM for com.nxp.nfclib:allcards-apdumagic:jar:4.1.1604 is missing, no dependency information available
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=47, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=33, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=7, ConflictResolver.conflictItemCount=46, DefaultDependencyCollector.collectTime=249, DefaultDependencyCollector.transformTime=12}
+[DEBUG] com.xyz:persistant-test:war:0.01-SNAPSHOT
+[DEBUG]    org.postgresql:postgresql:jar:9.4-1202-jdbc41:provided
+[DEBUG]    org.hibernate:hibernate-entitymanager:jar:5.0.1.Final:compile
+[DEBUG]       org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile
+[DEBUG]       org.hibernate:hibernate-core:jar:5.0.1.Final:compile
+[DEBUG]          antlr:antlr:jar:2.7.7:compile
+[DEBUG]          org.jboss:jandex:jar:1.2.2.Final:compile
+[DEBUG]       dom4j:dom4j:jar:1.6.1:compile
+[DEBUG]          xml-apis:xml-apis:jar:1.0.b2:compile
+[DEBUG]       org.hibernate.common:hibernate-commons-annotations:jar:5.0.0.Final:compile
+[DEBUG]       org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final:compile
+[DEBUG]       org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile
+[DEBUG]       org.javassist:javassist:jar:3.18.1-GA:compile
+[DEBUG]    org.hibernate:hibernate-validator:jar:5.0.1.Final:compile
+[DEBUG]       javax.validation:validation-api:jar:1.1.0.Final:compile
+[DEBUG]       com.fasterxml:classmate:jar:0.8.0:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.12:compile
+[DEBUG]    org.apache.logging.log4j:log4j-core:jar:2.3:compile
+[DEBUG]       org.apache.logging.log4j:log4j-api:jar:2.3:compile
+[DEBUG]    org.apache.logging.log4j:log4j-slf4j-impl:jar:2.3:compile
+[DEBUG]    junit:junit:jar:4.10:compile
+[DEBUG]       org.hamcrest:hamcrest-core:jar:1.1:compile
+[DEBUG]    com.nxp.nfclib:allcards-apdumagic:jar:4.1.1604:compile
+[DEBUG]    com.google.code.findbugs:jsr305:jar:3.0.0:provided
+[DEBUG]    javax.ws.rs:jsr311-api:jar:1.1.1:compile
+[DEBUG]    javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided
+[DEBUG]    com.sun.jersey.contribs:jersey-guice:jar:1.19:compile
+[DEBUG]       javax.inject:javax.inject:jar:1:compile
+[DEBUG]       com.google.inject:guice:jar:3.0:compile
+[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]       com.google.inject.extensions:guice-servlet:jar:3.0:compile
+[DEBUG]       com.sun.jersey:jersey-servlet:jar:1.19:compile
+[DEBUG]          com.sun.jersey:jersey-server:jar:1.19:compile
+[DEBUG]             com.sun.jersey:jersey-core:jar:1.19:compile
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ persistant-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=0, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=23, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = C:\nxp\workspaces\sample\persistant-test\target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG]   (f) reportDirectory = C:\nxp\workspaces\sample\persistant-test\target\site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = C:\nxp\workspaces\sample\persistant-test\target\test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting C:\nxp\workspaces\sample\persistant-test\target
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test.war
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test-classes
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\web.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\xml-apis-1.0.b2.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\validation-api-1.1.0.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\slf4j-api-1.7.12.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\log4j-slf4j-impl-2.3.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\log4j-core-2.3.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\log4j-api-2.3.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\junit-4.10.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\jsr311-api-1.1.1.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\jersey-servlet-1.19.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\jersey-server-1.19.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\jersey-guice-1.19.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\jersey-core-1.19.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\jboss-logging-3.3.0.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\javax.inject-1.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\javassist-3.18.1-GA.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\jandex-1.2.2.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\hibernate-validator-5.0.1.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\hibernate-jpa-2.1-api-1.0.0.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\hibernate-entitymanager-5.0.1.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\hibernate-core-5.0.1.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\hibernate-commons-annotations-5.0.0.Final.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\hamcrest-core-1.1.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\guice-servlet-3.0.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\guice-3.0.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\geronimo-jta_1.1_spec-1.1.1.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\dom4j-1.6.1.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\classmate-0.8.0.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\aopalliance-1.0.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\antlr-2.7.7.jar
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib\allcards-apdumagic-4.1.1604.jar
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\lib
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\META-INF\persistence.xml
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\META-INF
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\set_default_development_keys.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\rename_fixedsizeslot_to_sharedslot.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\remove_dedicatedslot_damslotversion.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\migrate_to_PBKDF2WithHmacSHA512.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\max_length_of_email_address_is_254.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\make_application_appprovidername_not_null.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\liquibase.properties
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\dbchangelog.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf155372.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf153340.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf153334.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf153314.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf153105.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf153067.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf152926.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf127211.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf114000.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf113997.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf112603.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf112139.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf112113.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf112092.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf112008.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf111893.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf111871.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf111585.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf111567.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf111544.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf111357.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf110958.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf110548.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf110543.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf110536.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf110535.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf110523.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\changeset-artf110394.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_table_send_email_queue_entry.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_system_property_STORE_DEPLOYMENT_NAME.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_not_null_constr_approvedapplication_approvalon.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_indices_for_key_refs.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_indices.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_field_card_type_to_cardissuer.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_field_cardissuer_registrationconfirmedon.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_field_applicationprovider_registrationconfirmedon.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase\add_check_constraints_to_cardissuer.xml
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\liquibase
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\com\xyz\TestPersistant.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\com\xyz\PingResource.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\com\xyz\KeyTypeEnum.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\com\xyz\KeyReference.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\com\xyz\Entity.class
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\com\xyz
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes\com
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF\classes
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\WEB-INF
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test\META-INF
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\test\index.html
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\test
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\maven-status\maven-compiler-plugin\compile\default-compile\inputFiles.lst
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\maven-status\maven-compiler-plugin\compile\default-compile\createdFiles.lst
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\maven-status\maven-compiler-plugin\compile\default-compile
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\maven-status\maven-compiler-plugin\compile
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\maven-status\maven-compiler-plugin
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\maven-status
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\maven-archiver\pom.properties
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\maven-archiver
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\META-INF\persistence.xml
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\classes\META-INF
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\set_default_development_keys.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\rename_fixedsizeslot_to_sharedslot.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\remove_dedicatedslot_damslotversion.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\migrate_to_PBKDF2WithHmacSHA512.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\max_length_of_email_address_is_254.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\make_application_appprovidername_not_null.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\liquibase.properties
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\dbchangelog.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf155372.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153340.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153334.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153314.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153105.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153067.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf152926.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf127211.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf114000.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf113997.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112603.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112139.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112113.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112092.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112008.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111893.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111871.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111585.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111567.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111544.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111357.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110958.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110548.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110543.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110536.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110535.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110523.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110394.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_table_send_email_queue_entry.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_system_property_STORE_DEPLOYMENT_NAME.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_not_null_constr_approvedapplication_approvalon.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_indices_for_key_refs.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_indices.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_field_card_type_to_cardissuer.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_field_cardissuer_registrationconfirmedon.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_field_applicationprovider_registrationconfirmedon.xml
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_check_constraints_to_cardissuer.xml
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\com\xyz\TestPersistant.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\com\xyz\PingResource.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\com\xyz\KeyTypeEnum.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\com\xyz\KeyReference.class
+[INFO] Deleting file C:\nxp\workspaces\sample\persistant-test\target\classes\com\xyz\Entity.class
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\classes\com\xyz
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\classes\com
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target\classes
+[INFO] Deleting directory C:\nxp\workspaces\sample\persistant-test\target
+[DEBUG] Skipping non-existing directory C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG] Skipping non-existing directory C:\nxp\workspaces\sample\persistant-test\target\test-classes
+[DEBUG] Skipping non-existing directory C:\nxp\workspaces\sample\persistant-test\target\site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ persistant-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=120, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.xyz:persistant-test:0.01-SNAPSHOT @ C:\nxp\workspaces\sample\persistant-test\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\nxp\workspaces\sample\persistant-test\src\main\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, env.USERDOMAIN_ROAMINGPROFILE=WBI, env.DEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.PROMPT=$P$G, env.WDIR=C:\, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=C:\nxp\java\jdk1.8.0_77\jre\lib\resources.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\rt.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\sunrsasign.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jsse.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jce.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\charsets.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jfr.jar;C:\nxp\java\jdk1.8.0_77\jre\classes, env.COMPUTERNAME=NXL29002, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_77-b03, env.HOMEPATH=\, env.HOMESHARE=\\wbi.nxp.com\Users\nxa30710, user.name=nxa30710, maven.build.version=Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T22:11:47+05:30), env.WINDOWS_TRACING_FLAGS=3, env.PATH=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Git\cmd;C:\Users\nxa30710\AppData\Local\Android\Sdk\platform-tools;C:\Users\nxa30710\AppData\Local\Android\Sdk\tools;C:\nxp\java\jdk1.8.0_77\bin;C:\nxp\tools\apache-maven-3.3.9\bin;, user.language=en, env.WINDIR=C:\Windows, sun.boot.library.path=C:\nxp\java\jdk1.8.0_77\jre\bin, classworlds.conf=C:\nxp\tools\apache-maven-3.3.9\bin\..\bin\m2.conf, java.version=1.8.0_77, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel, user.timezone=Asia/Calcutta, env.TEMP=C:\Users\nxa30710\AppData\Local\Temp, sun.arch.data.model=64, env.EXEC_DIR=C:\nxp\workspaces\sample\persistant-test, env.WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log, env.APR_ICONV_PATH=C:\Program Files (x86)\Subversion\iconv, java.endorsed.dirs=C:\nxp\java\jdk1.8.0_77\jre\lib\endorsed, env.VSEDEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.cpu.isalist=amd64, env.HOMEDRIVE=H:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=US, java.home=C:\nxp\java\jdk1.8.0_77\jre, env.ANDROID_HOME=C:\Users\nxa30710\AppData\Local\Android\Sdk, env.APPDATA=C:\Users\nxa30710\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=6.1, env.=::=::\, path.separator=;, java.vm.version=25.77-b03, user.variant=, env.USERPROFILE=C:\Users\nxa30710, env.JAVA_HOME=C:\nxp\java\jdk1.8.0_77, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=C:\Users\nxa30710\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, env.OSTYPE=6.1.7601.23250, user.script=, user.home=C:\Users\nxa30710, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, env.M2_HOME=C:\nxp\tools\apache-maven-3.3.9\bin\.., java.library.path=C:\nxp\java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Git\cmd;C:\Users\nxa30710\AppData\Local\Android\Sdk\platform-tools;C:\Users\nxa30710\AppData\Local\Android\Sdk\tools;C:\nxp\java\jdk1.8.0_77\bin;C:\nxp\tools\apache-maven-3.3.9\bin;;., env.NUMBER_OF_PROCESSORS=4, java.vendor.url=http://java.oracle.com/, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.USERDNSDOMAIN=WBI.NXP.COM, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=clean install -X, java.vm.vendor=Oracle Corporation, maven.home=C:\nxp\tools\apache-maven-3.3.9\bin\.., java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -X, java.class.path=C:\nxp\tools\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar, env.PROGRAMW6432=C:\Program Files, maven.version=3.3.9, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.MAVEN_JAVA_EXE="C:\nxp\java\jdk1.8.0_77\bin\java.exe", java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\INGBTCPIC6DC200, java.vm.specification.version=1.8, env.PROCESSOR_ARCHITECTURE=AMD64, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=H:\, java.io.tmpdir=C:\Users\nxa30710\AppData\Local\Temp\, env.UATDATA=C:\Windows\SysWOW64\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, env.PROCESSOR_REVISION=3d04, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=C:\nxp\workspaces\sample\persistant-test, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\nxp\java\jdk1.8.0_77\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\nxp\workspaces\sample\persistant-test, env.LOCALAPPDATA=C:\Users\nxa30710\AppData\Local, line.separator=
+, env.CLASSWORLDS_JAR="C:\nxp\tools\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar", java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.ERROR_CODE=0, env.USERNAME=nxa30710, sun.stderr.encoding=cp437, file.encoding=Cp1252, env.USERDOMAIN=WBI, java.specification.version=1.8, env.MVN_HOME=C:\nxp\tools\apache-maven-3.3.9, env.=C:=C:\nxp\workspaces\sample\persistant-test, env.PROCESSOR_LEVEL=6, env.MAVEN_PROJECTBASEDIR=C:\nxp\workspaces\sample\persistant-test}
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory C:\nxp\workspaces\sample\persistant-test\src\main\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 46 resources
+[DEBUG] file add_check_constraints_to_cardissuer.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_check_constraints_to_cardissuer.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_check_constraints_to_cardissuer.xml
+[DEBUG] file add_field_applicationprovider_registrationconfirmedon.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_field_applicationprovider_registrationconfirmedon.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_field_applicationprovider_registrationconfirmedon.xml
+[DEBUG] file add_field_cardissuer_registrationconfirmedon.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_field_cardissuer_registrationconfirmedon.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_field_cardissuer_registrationconfirmedon.xml
+[DEBUG] file add_field_card_type_to_cardissuer.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_field_card_type_to_cardissuer.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_field_card_type_to_cardissuer.xml
+[DEBUG] file add_indices.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_indices.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_indices.xml
+[DEBUG] file add_indices_for_key_refs.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_indices_for_key_refs.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_indices_for_key_refs.xml
+[DEBUG] file add_not_null_constr_approvedapplication_approvalon.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_not_null_constr_approvedapplication_approvalon.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_not_null_constr_approvedapplication_approvalon.xml
+[DEBUG] file add_system_property_STORE_DEPLOYMENT_NAME.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_system_property_STORE_DEPLOYMENT_NAME.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_system_property_STORE_DEPLOYMENT_NAME.xml
+[DEBUG] file add_table_send_email_queue_entry.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\add_table_send_email_queue_entry.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\add_table_send_email_queue_entry.xml
+[DEBUG] file changeset-artf110394.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf110394.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110394.xml
+[DEBUG] file changeset-artf110523.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf110523.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110523.xml
+[DEBUG] file changeset-artf110535.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf110535.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110535.xml
+[DEBUG] file changeset-artf110536.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf110536.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110536.xml
+[DEBUG] file changeset-artf110543.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf110543.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110543.xml
+[DEBUG] file changeset-artf110548.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf110548.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110548.xml
+[DEBUG] file changeset-artf110958.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf110958.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf110958.xml
+[DEBUG] file changeset-artf111357.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf111357.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111357.xml
+[DEBUG] file changeset-artf111544.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf111544.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111544.xml
+[DEBUG] file changeset-artf111567.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf111567.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111567.xml
+[DEBUG] file changeset-artf111585.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf111585.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111585.xml
+[DEBUG] file changeset-artf111871.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf111871.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111871.xml
+[DEBUG] file changeset-artf111893.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf111893.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf111893.xml
+[DEBUG] file changeset-artf112008.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf112008.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112008.xml
+[DEBUG] file changeset-artf112092.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf112092.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112092.xml
+[DEBUG] file changeset-artf112113.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf112113.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112113.xml
+[DEBUG] file changeset-artf112139.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf112139.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112139.xml
+[DEBUG] file changeset-artf112603.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf112603.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf112603.xml
+[DEBUG] file changeset-artf113997.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf113997.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf113997.xml
+[DEBUG] file changeset-artf114000.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf114000.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf114000.xml
+[DEBUG] file changeset-artf127211.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf127211.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf127211.xml
+[DEBUG] file changeset-artf152926.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf152926.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf152926.xml
+[DEBUG] file changeset-artf153067.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf153067.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153067.xml
+[DEBUG] file changeset-artf153105.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf153105.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153105.xml
+[DEBUG] file changeset-artf153314.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf153314.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153314.xml
+[DEBUG] file changeset-artf153334.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf153334.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153334.xml
+[DEBUG] file changeset-artf153340.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf153340.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf153340.xml
+[DEBUG] file changeset-artf155372.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\changeset-artf155372.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\changeset-artf155372.xml
+[DEBUG] file dbchangelog.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\dbchangelog.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\dbchangelog.xml
+[DEBUG] file liquibase.properties has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\liquibase.properties to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\liquibase.properties
+[DEBUG] file make_application_appprovidername_not_null.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\make_application_appprovidername_not_null.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\make_application_appprovidername_not_null.xml
+[DEBUG] file max_length_of_email_address_is_254.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\max_length_of_email_address_is_254.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\max_length_of_email_address_is_254.xml
+[DEBUG] file migrate_to_PBKDF2WithHmacSHA512.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\migrate_to_PBKDF2WithHmacSHA512.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\migrate_to_PBKDF2WithHmacSHA512.xml
+[DEBUG] file remove_dedicatedslot_damslotversion.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\remove_dedicatedslot_damslotversion.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\remove_dedicatedslot_damslotversion.xml
+[DEBUG] file rename_fixedsizeslot_to_sharedslot.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\rename_fixedsizeslot_to_sharedslot.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\rename_fixedsizeslot_to_sharedslot.xml
+[DEBUG] file set_default_development_keys.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\liquibase\set_default_development_keys.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\liquibase\set_default_development_keys.xml
+[DEBUG] file persistence.xml has a filtered file extension
+[DEBUG] copy C:\nxp\workspaces\sample\persistant-test\src\main\resources\META-INF\persistence.xml to C:\nxp\workspaces\sample\persistant-test\target\classes\META-INF\persistence.xml
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- liquibase-maven-plugin:3.4.1:update (default) @ persistant-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=24, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=14, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=24, DefaultDependencyCollector.collectTime=66, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.liquibase:liquibase-maven-plugin:jar:3.4.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.0.4:compile
+[DEBUG]       org.apache.maven:maven-artifact:jar:2.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-8:compile
+[DEBUG]          junit:junit:jar:4.11:test
+[DEBUG]             org.hamcrest:hamcrest-core:jar:1.3:test
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.liquibase:liquibase-core:jar:3.4.1:compile
+[DEBUG] Created new class realm plugin>org.liquibase:liquibase-maven-plugin:3.4.1
+[DEBUG] Importing foreign packages into class realm plugin>org.liquibase:liquibase-maven-plugin:3.4.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.liquibase:liquibase-maven-plugin:3.4.1
+[DEBUG]   Included: org.liquibase:liquibase-maven-plugin:jar:3.4.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.0.4
+[DEBUG]   Included: org.liquibase:liquibase-core:jar:3.4.1
+[DEBUG] Configuring mojo org.liquibase:liquibase-maven-plugin:3.4.1:update from plugin realm ClassRealm[plugin>org.liquibase:liquibase-maven-plugin:3.4.1, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.liquibase:liquibase-maven-plugin:3.4.1:update' with basic configurator -->
+[DEBUG]   (f) changesToApply = 0
+[DEBUG]   (f) clearCheckSums = false
+[DEBUG]   (f) dropFirst = false
+[DEBUG]   (f) emptyPassword = false
+[DEBUG]   (f) includeArtifact = true
+[DEBUG]   (f) includeTestOutputDirectory = true
+[DEBUG]   (f) logging = INFO
+[DEBUG]   (f) project = MavenProject: com.xyz:persistant-test:0.01-SNAPSHOT @ C:\nxp\workspaces\sample\persistant-test\pom.xml
+[DEBUG]   (f) promptOnNonLocalDatabase = true
+[DEBUG]   (f) propertyFile = src/main/resources/liquibase/liquibase.properties
+[DEBUG]   (f) propertyFileWillOverride = false
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[INFO] ------------------------------------------------------------------------
+[INFO] Parsing Liquibase Properties File
+[INFO]   File: src/main/resources/liquibase/liquibase.properties
+[DEBUG]   properties file setting value: changeLogFile
+[DEBUG]   properties file setting value: password
+[DEBUG]   properties file setting value: url
+[DEBUG]   properties file setting value: driver
+[DEBUG]   properties file setting value: username
+[INFO] ------------------------------------------------------------------------
+[DEBUG] expressionVars = null
+[DEBUG] expressionVariables = null
+[INFO] Executing on Database: jdbc:postgresql://localhost:5432/appstore
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ persistant-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=160, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=43, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=63, DefaultDependencyCollector.collectTime=327, DefaultDependencyCollector.transformTime=2}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.1:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.1:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:1.0:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.1:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.2:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.1
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.2
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\nxp\workspaces\sample\persistant-test
+[DEBUG]   (f) buildDirectory = C:\nxp\workspaces\sample\persistant-test\target
+[DEBUG]   (f) classpathElements = [C:\nxp\workspaces\sample\persistant-test\target\classes, C:\Users\nxa30710\.m2\repository\org\postgresql\postgresql\9.4-1202-jdbc41\postgresql-9.4-1202-jdbc41.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-entitymanager\5.0.1.Final\hibernate-entitymanager-5.0.1.Final.jar, C:\Users\nxa30710\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-core\5.0.1.Final\hibernate-core-5.0.1.Final.jar, C:\Users\nxa30710\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar, C:\Users\nxa30710\.m2\repository\org\jboss\jandex\1.2.2.Final\jandex-1.2.2.Final.jar, C:\Users\nxa30710\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar, C:\Users\nxa30710\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.0.Final\hibernate-commons-annotations-5.0.0.Final.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar, C:\Users\nxa30710\.m2\repository\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar, C:\Users\nxa30710\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-validator\5.0.1.Final\hibernate-validator-5.0.1.Final.jar, C:\Users\nxa30710\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar, C:\Users\nxa30710\.m2\repository\com\fasterxml\classmate\0.8.0\classmate-0.8.0.jar, C:\Users\nxa30710\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar, C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-core\2.3\log4j-core-2.3.jar, C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-api\2.3\log4j-api-2.3.jar, C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.3\log4j-slf4j-impl-2.3.jar, C:\Users\nxa30710\.m2\repository\junit\junit\4.10\junit-4.10.jar, C:\Users\nxa30710\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar, C:\Users\nxa30710\.m2\repository\com\nxp\nfclib\allcards-apdumagic\4.1.1604\allcards-apdumagic-4.1.1604.jar, C:\Users\nxa30710\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar, C:\Users\nxa30710\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar, C:\Users\nxa30710\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\contribs\jersey-guice\1.19\jersey-guice-1.19.jar, C:\Users\nxa30710\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar, C:\Users\nxa30710\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar, C:\Users\nxa30710\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar, C:\Users\nxa30710\.m2\repository\com\google\inject\extensions\guice-servlet\3.0\guice-servlet-3.0.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\nxp\workspaces\sample\persistant-test\src\main\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = C:\nxp\workspaces\sample\persistant-test\target\generated-sources\annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG]   (f) projectArtifact = com.xyz:persistant-test:war:0.01-SNAPSHOT
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [C:\nxp\workspaces\sample\persistant-test\src\main\java]
+[DEBUG] Classpath: [C:\nxp\workspaces\sample\persistant-test\target\classes
+ C:\Users\nxa30710\.m2\repository\org\postgresql\postgresql\9.4-1202-jdbc41\postgresql-9.4-1202-jdbc41.jar
+ C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-entitymanager\5.0.1.Final\hibernate-entitymanager-5.0.1.Final.jar
+ C:\Users\nxa30710\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar
+ C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-core\5.0.1.Final\hibernate-core-5.0.1.Final.jar
+ C:\Users\nxa30710\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar
+ C:\Users\nxa30710\.m2\repository\org\jboss\jandex\1.2.2.Final\jandex-1.2.2.Final.jar
+ C:\Users\nxa30710\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar
+ C:\Users\nxa30710\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar
+ C:\Users\nxa30710\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.0.Final\hibernate-commons-annotations-5.0.0.Final.jar
+ C:\Users\nxa30710\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar
+ C:\Users\nxa30710\.m2\repository\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar
+ C:\Users\nxa30710\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar
+ C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-validator\5.0.1.Final\hibernate-validator-5.0.1.Final.jar
+ C:\Users\nxa30710\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar
+ C:\Users\nxa30710\.m2\repository\com\fasterxml\classmate\0.8.0\classmate-0.8.0.jar
+ C:\Users\nxa30710\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar
+ C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-core\2.3\log4j-core-2.3.jar
+ C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-api\2.3\log4j-api-2.3.jar
+ C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.3\log4j-slf4j-impl-2.3.jar
+ C:\Users\nxa30710\.m2\repository\junit\junit\4.10\junit-4.10.jar
+ C:\Users\nxa30710\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar
+ C:\Users\nxa30710\.m2\repository\com\nxp\nfclib\allcards-apdumagic\4.1.1604\allcards-apdumagic-4.1.1604.jar
+ C:\Users\nxa30710\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar
+ C:\Users\nxa30710\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar
+ C:\Users\nxa30710\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar
+ C:\Users\nxa30710\.m2\repository\com\sun\jersey\contribs\jersey-guice\1.19\jersey-guice-1.19.jar
+ C:\Users\nxa30710\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
+ C:\Users\nxa30710\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar
+ C:\Users\nxa30710\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
+ C:\Users\nxa30710\.m2\repository\com\google\inject\extensions\guice-servlet\3.0\guice-servlet-3.0.jar
+ C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar
+ C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar
+ C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar]
+[DEBUG] Output directory: C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: C:\nxp\workspaces\sample\persistant-test\src\main\java\com\xyz\Entity.java
+[DEBUG] Stale source detected: C:\nxp\workspaces\sample\persistant-test\src\main\java\com\xyz\KeyTypeEnum.java
+[DEBUG] Stale source detected: C:\nxp\workspaces\sample\persistant-test\src\main\java\com\xyz\PingResource.java
+[DEBUG] Stale source detected: C:\nxp\workspaces\sample\persistant-test\src\main\java\com\xyz\TestPersistant.java
+[DEBUG] Stale source detected: C:\nxp\workspaces\sample\persistant-test\src\main\java\com\xyz\KeyReference.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\postgresql\postgresql\9.4-1202-jdbc41\postgresql-9.4-1202-jdbc41.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-entitymanager\5.0.1.Final\hibernate-entitymanager-5.0.1.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-core\5.0.1.Final\hibernate-core-5.0.1.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\jboss\jandex\1.2.2.Final\jandex-1.2.2.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.0.Final\hibernate-commons-annotations-5.0.0.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-validator\5.0.1.Final\hibernate-validator-5.0.1.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\fasterxml\classmate\0.8.0\classmate-0.8.0.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-core\2.3\log4j-core-2.3.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-api\2.3\log4j-api-2.3.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.3\log4j-slf4j-impl-2.3.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\junit\junit\4.10\junit-4.10.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\nxp\nfclib\allcards-apdumagic\4.1.1604\allcards-apdumagic-4.1.1604.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\sun\jersey\contribs\jersey-guice\1.19\jersey-guice-1.19.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\google\inject\extensions\guice-servlet\3.0\guice-servlet-3.0.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar
+[DEBUG]  C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar
+[DEBUG] Source roots:
+[DEBUG]  C:\nxp\workspaces\sample\persistant-test\src\main\java
+[DEBUG] Command line options:
+[DEBUG] -d C:\nxp\workspaces\sample\persistant-test\target\classes -classpath C:\nxp\workspaces\sample\persistant-test\target\classes;C:\Users\nxa30710\.m2\repository\org\postgresql\postgresql\9.4-1202-jdbc41\postgresql-9.4-1202-jdbc41.jar;C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-entitymanager\5.0.1.Final\hibernate-entitymanager-5.0.1.Final.jar;C:\Users\nxa30710\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar;C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-core\5.0.1.Final\hibernate-core-5.0.1.Final.jar;C:\Users\nxa30710\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\nxa30710\.m2\repository\org\jboss\jandex\1.2.2.Final\jandex-1.2.2.Final.jar;C:\Users\nxa30710\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\nxa30710\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar;C:\Users\nxa30710\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.0.Final\hibernate-commons-annotations-5.0.0.Final.jar;C:\Users\nxa30710\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\nxa30710\.m2\repository\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar;C:\Users\nxa30710\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-validator\5.0.1.Final\hibernate-validator-5.0.1.Final.jar;C:\Users\nxa30710\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar;C:\Users\nxa30710\.m2\repository\com\fasterxml\classmate\0.8.0\classmate-0.8.0.jar;C:\Users\nxa30710\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-core\2.3\log4j-core-2.3.jar;C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-api\2.3\log4j-api-2.3.jar;C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.3\log4j-slf4j-impl-2.3.jar;C:\Users\nxa30710\.m2\repository\junit\junit\4.10\junit-4.10.jar;C:\Users\nxa30710\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar;C:\Users\nxa30710\.m2\repository\com\nxp\nfclib\allcards-apdumagic\4.1.1604\allcards-apdumagic-4.1.1604.jar;C:\Users\nxa30710\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar;C:\Users\nxa30710\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar;C:\Users\nxa30710\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar;C:\Users\nxa30710\.m2\repository\com\sun\jersey\contribs\jersey-guice\1.19\jersey-guice-1.19.jar;C:\Users\nxa30710\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\nxa30710\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar;C:\Users\nxa30710\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\nxa30710\.m2\repository\com\google\inject\extensions\guice-servlet\3.0\guice-servlet-3.0.jar;C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar;C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar;C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar; -sourcepath C:\nxp\workspaces\sample\persistant-test\src\main\java; -g -nowarn -target 1.5 -source 1.5
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 5 source files to C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ persistant-test ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = C:\nxp\workspaces\sample\persistant-test\target\test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.xyz:persistant-test:0.01-SNAPSHOT @ C:\nxp\workspaces\sample\persistant-test\pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: C:\nxp\workspaces\sample\persistant-test\src\test\resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, env.USERDOMAIN_ROAMINGPROFILE=WBI, env.DEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.PROMPT=$P$G, env.WDIR=C:\, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=C:\nxp\java\jdk1.8.0_77\jre\lib\resources.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\rt.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\sunrsasign.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jsse.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jce.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\charsets.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jfr.jar;C:\nxp\java\jdk1.8.0_77\jre\classes, env.COMPUTERNAME=NXL29002, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_77-b03, env.HOMEPATH=\, env.HOMESHARE=\\wbi.nxp.com\Users\nxa30710, user.name=nxa30710, maven.build.version=Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T22:11:47+05:30), env.WINDOWS_TRACING_FLAGS=3, env.PATH=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Git\cmd;C:\Users\nxa30710\AppData\Local\Android\Sdk\platform-tools;C:\Users\nxa30710\AppData\Local\Android\Sdk\tools;C:\nxp\java\jdk1.8.0_77\bin;C:\nxp\tools\apache-maven-3.3.9\bin;, user.language=en, env.WINDIR=C:\Windows, sun.boot.library.path=C:\nxp\java\jdk1.8.0_77\jre\bin, classworlds.conf=C:\nxp\tools\apache-maven-3.3.9\bin\..\bin\m2.conf, java.version=1.8.0_77, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel, user.timezone=Asia/Calcutta, env.TEMP=C:\Users\nxa30710\AppData\Local\Temp, sun.arch.data.model=64, env.EXEC_DIR=C:\nxp\workspaces\sample\persistant-test, env.WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log, env.APR_ICONV_PATH=C:\Program Files (x86)\Subversion\iconv, java.endorsed.dirs=C:\nxp\java\jdk1.8.0_77\jre\lib\endorsed, env.VSEDEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.cpu.isalist=amd64, env.HOMEDRIVE=H:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=US, java.home=C:\nxp\java\jdk1.8.0_77\jre, env.ANDROID_HOME=C:\Users\nxa30710\AppData\Local\Android\Sdk, env.APPDATA=C:\Users\nxa30710\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=6.1, env.=::=::\, path.separator=;, java.vm.version=25.77-b03, user.variant=, env.USERPROFILE=C:\Users\nxa30710, env.JAVA_HOME=C:\nxp\java\jdk1.8.0_77, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=C:\Users\nxa30710\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, env.OSTYPE=6.1.7601.23250, user.script=, user.home=C:\Users\nxa30710, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, env.M2_HOME=C:\nxp\tools\apache-maven-3.3.9\bin\.., java.library.path=C:\nxp\java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Git\cmd;C:\Users\nxa30710\AppData\Local\Android\Sdk\platform-tools;C:\Users\nxa30710\AppData\Local\Android\Sdk\tools;C:\nxp\java\jdk1.8.0_77\bin;C:\nxp\tools\apache-maven-3.3.9\bin;;., env.NUMBER_OF_PROCESSORS=4, java.vendor.url=http://java.oracle.com/, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.USERDNSDOMAIN=WBI.NXP.COM, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.MAVEN_CMD_LINE_ARGS=clean install -X, java.vm.vendor=Oracle Corporation, maven.home=C:\nxp\tools\apache-maven-3.3.9\bin\.., java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -X, java.class.path=C:\nxp\tools\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar, env.PROGRAMW6432=C:\Program Files, maven.version=3.3.9, env.PROGRAMFILES(X86)=C:\Program Files (x86), env.MAVEN_JAVA_EXE="C:\nxp\java\jdk1.8.0_77\bin\java.exe", java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\INGBTCPIC6DC200, java.vm.specification.version=1.8, env.PROCESSOR_ARCHITECTURE=AMD64, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, env.HOME=H:\, java.io.tmpdir=C:\Users\nxa30710\AppData\Local\Temp\, env.UATDATA=C:\Windows\SysWOW64\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, env.PROCESSOR_REVISION=3d04, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=C:\nxp\workspaces\sample\persistant-test, env.PROGRAMDATA=C:\ProgramData, env.COMSPEC=C:\Windows\system32\cmd.exe, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\nxp\java\jdk1.8.0_77\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\nxp\workspaces\sample\persistant-test, env.LOCALAPPDATA=C:\Users\nxa30710\AppData\Local, line.separator=
+, env.CLASSWORLDS_JAR="C:\nxp\tools\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar", java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.ERROR_CODE=0, env.USERNAME=nxa30710, sun.stderr.encoding=cp437, file.encoding=Cp1252, env.USERDOMAIN=WBI, java.specification.version=1.8, env.MVN_HOME=C:\nxp\tools\apache-maven-3.3.9, env.=C:=C:\nxp\workspaces\sample\persistant-test, env.PROCESSOR_LEVEL=6, env.MAVEN_PROJECTBASEDIR=C:\nxp\workspaces\sample\persistant-test}
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory C:\nxp\workspaces\sample\persistant-test\src\test\resources
+excludes []
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 0 resource
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ persistant-test ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.1, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = C:\nxp\workspaces\sample\persistant-test
+[DEBUG]   (f) buildDirectory = C:\nxp\workspaces\sample\persistant-test\target
+[DEBUG]   (f) classpathElements = [C:\nxp\workspaces\sample\persistant-test\target\test-classes, C:\nxp\workspaces\sample\persistant-test\target\classes, C:\Users\nxa30710\.m2\repository\org\postgresql\postgresql\9.4-1202-jdbc41\postgresql-9.4-1202-jdbc41.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-entitymanager\5.0.1.Final\hibernate-entitymanager-5.0.1.Final.jar, C:\Users\nxa30710\.m2\repository\org\jboss\logging\jboss-logging\3.3.0.Final\jboss-logging-3.3.0.Final.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-core\5.0.1.Final\hibernate-core-5.0.1.Final.jar, C:\Users\nxa30710\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar, C:\Users\nxa30710\.m2\repository\org\jboss\jandex\1.2.2.Final\jandex-1.2.2.Final.jar, C:\Users\nxa30710\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar, C:\Users\nxa30710\.m2\repository\xml-apis\xml-apis\1.0.b2\xml-apis-1.0.b2.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.0.0.Final\hibernate-commons-annotations-5.0.0.Final.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar, C:\Users\nxa30710\.m2\repository\org\apache\geronimo\specs\geronimo-jta_1.1_spec\1.1.1\geronimo-jta_1.1_spec-1.1.1.jar, C:\Users\nxa30710\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar, C:\Users\nxa30710\.m2\repository\org\hibernate\hibernate-validator\5.0.1.Final\hibernate-validator-5.0.1.Final.jar, C:\Users\nxa30710\.m2\repository\javax\validation\validation-api\1.1.0.Final\validation-api-1.1.0.Final.jar, C:\Users\nxa30710\.m2\repository\com\fasterxml\classmate\0.8.0\classmate-0.8.0.jar, C:\Users\nxa30710\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar, C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-core\2.3\log4j-core-2.3.jar, C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-api\2.3\log4j-api-2.3.jar, C:\Users\nxa30710\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.3\log4j-slf4j-impl-2.3.jar, C:\Users\nxa30710\.m2\repository\junit\junit\4.10\junit-4.10.jar, C:\Users\nxa30710\.m2\repository\org\hamcrest\hamcrest-core\1.1\hamcrest-core-1.1.jar, C:\Users\nxa30710\.m2\repository\com\nxp\nfclib\allcards-apdumagic\4.1.1604\allcards-apdumagic-4.1.1604.jar, C:\Users\nxa30710\.m2\repository\com\google\code\findbugs\jsr305\3.0.0\jsr305-3.0.0.jar, C:\Users\nxa30710\.m2\repository\javax\ws\rs\jsr311-api\1.1.1\jsr311-api-1.1.1.jar, C:\Users\nxa30710\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0.1\javax.ws.rs-api-2.0.1.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\contribs\jersey-guice\1.19\jersey-guice-1.19.jar, C:\Users\nxa30710\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar, C:\Users\nxa30710\.m2\repository\com\google\inject\guice\3.0\guice-3.0.jar, C:\Users\nxa30710\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar, C:\Users\nxa30710\.m2\repository\com\google\inject\extensions\guice-servlet\3.0\guice-servlet-3.0.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-servlet\1.19\jersey-servlet-1.19.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-server\1.19\jersey-server-1.19.jar, C:\Users\nxa30710\.m2\repository\com\sun\jersey\jersey-core\1.19\jersey-core-1.19.jar]
+[DEBUG]   (f) compileSourceRoots = [C:\nxp\workspaces\sample\persistant-test\src\test\java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = C:\nxp\workspaces\sample\persistant-test\target\generated-test-sources\test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.1:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = C:\nxp\workspaces\sample\persistant-test\target\test-classes
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.5
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.5
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG]   (f) mavenSession = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ persistant-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=1, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=97, DefaultDependencyCollector.transformTime=5}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.12.4:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.12.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test' with basic configurator -->
+[DEBUG]   (s) basedir = C:\nxp\workspaces\sample\persistant-test
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///C:/Users/nxa30710/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.12.4:, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:2.0.9:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.12.4:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:3.0.8:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.0.9:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.0.9:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.0.9:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.0.9:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.0.9:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.0.9:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.0.9:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, org.apache.maven:maven-core=org.apache.maven:maven-core:jar:2.0.9:compile, org.apache.maven:maven-plugin-parameter-documenter=org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.0.9:compile, org.apache.maven:maven-error-diagnostics=org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile, org.apache.maven:maven-plugin-descriptor=org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile, org.apache.maven:maven-monitor=org.apache.maven:maven-monitor:jar:2.0.9:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1:compile, org.apache.maven:maven-toolchain=org.apache.maven:maven-toolchain:jar:2.0.9:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {org.postgresql:postgresql=org.postgresql:postgresql:jar:9.4-1202-jdbc41:provided, org.hibernate:hibernate-entitymanager=org.hibernate:hibernate-entitymanager:jar:5.0.1.Final:compile, org.jboss.logging:jboss-logging=org.jboss.logging:jboss-logging:jar:3.3.0.Final:compile, org.hibernate:hibernate-core=org.hibernate:hibernate-core:jar:5.0.1.Final:compile, antlr:antlr=antlr:antlr:jar:2.7.7:compile, org.jboss:jandex=org.jboss:jandex:jar:1.2.2.Final:compile, dom4j:dom4j=dom4j:dom4j:jar:1.6.1:compile, xml-apis:xml-apis=xml-apis:xml-apis:jar:1.0.b2:compile, org.hibernate.common:hibernate-commons-annotations=org.hibernate.common:hibernate-commons-annotations:jar:5.0.0.Final:compile, org.hibernate.javax.persistence:hibernate-jpa-2.1-api=org.hibernate.javax.persistence:hibernate-jpa-2.1-api:jar:1.0.0.Final:compile, org.apache.geronimo.specs:geronimo-jta_1.1_spec=org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1:compile, org.javassist:javassist=org.javassist:javassist:jar:3.18.1-GA:compile, org.hibernate:hibernate-validator=org.hibernate:hibernate-validator:jar:5.0.1.Final:compile, javax.validation:validation-api=javax.validation:validation-api:jar:1.1.0.Final:compile, com.fasterxml:classmate=com.fasterxml:classmate:jar:0.8.0:compile, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.7.12:compile, org.apache.logging.log4j:log4j-core=org.apache.logging.log4j:log4j-core:jar:2.3:compile, org.apache.logging.log4j:log4j-api=org.apache.logging.log4j:log4j-api:jar:2.3:compile, org.apache.logging.log4j:log4j-slf4j-impl=org.apache.logging.log4j:log4j-slf4j-impl:jar:2.3:compile, junit:junit=junit:junit:jar:4.10:compile, org.hamcrest:hamcrest-core=org.hamcrest:hamcrest-core:jar:1.1:compile, com.nxp.nfclib:allcards-apdumagic=com.nxp.nfclib:allcards-apdumagic:jar:4.1.1604:compile, com.google.code.findbugs:jsr305=com.google.code.findbugs:jsr305:jar:3.0.0:provided, javax.ws.rs:jsr311-api=javax.ws.rs:jsr311-api:jar:1.1.1:compile, javax.ws.rs:javax.ws.rs-api=javax.ws.rs:javax.ws.rs-api:jar:2.0.1:provided, com.sun.jersey.contribs:jersey-guice=com.sun.jersey.contribs:jersey-guice:jar:1.19:compile, javax.inject:javax.inject=javax.inject:javax.inject:jar:1:compile, com.google.inject:guice=com.google.inject:guice:jar:3.0:compile, aopalliance:aopalliance=aopalliance:aopalliance:jar:1.0:compile, com.google.inject.extensions:guice-servlet=com.google.inject.extensions:guice-servlet:jar:3.0:compile, com.sun.jersey:jersey-servlet=com.sun.jersey:jersey-servlet:jar:1.19:compile, com.sun.jersey:jersey-server=com.sun.jersey:jersey-server:jar:1.19:compile, com.sun.jersey:jersey-core=com.sun.jersey:jersey-core:jar:1.19:compile}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [      id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = C:\nxp\workspaces\sample\persistant-test\target\surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = C:\nxp\workspaces\sample\persistant-test\target\test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = C:\nxp\workspaces\sample\persistant-test\src\test\java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = C:\nxp\workspaces\sample\persistant-test
+[DEBUG]   (s) project = MavenProject: com.xyz:persistant-test:0.01-SNAPSHOT @ C:\nxp\workspaces\sample\persistant-test\pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG] -- end configuration --
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ persistant-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=95, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=30, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2, ConflictResolver.conflictItemCount=87, DefaultDependencyCollector.collectTime=65, DefaultDependencyCollector.transformTime=3}
+[DEBUG] org.apache.maven.plugins:maven-war-plugin:jar:2.2:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-io:jar:2.0.2:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    com.thoughtworks.xstream:xstream:jar:1.3.1:compile
+[DEBUG]       xpp3:xpp3_min:jar:1.1.4c:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.0-beta-2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-war-plugin:2.2
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-war-plugin:2.2
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-war-plugin:2.2
+[DEBUG]   Included: org.apache.maven.plugins:maven-war-plugin:jar:2.2
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.2
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: com.thoughtworks.xstream:xstream:jar:1.3.1
+[DEBUG]   Included: xpp3:xpp3_min:jar:1.1.4c
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.0-beta-2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-war-plugin:2.2:war from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-war-plugin:2.2, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-war-plugin:2.2:war' with basic configurator -->
+[DEBUG]   (s) archiveClasses = false
+[DEBUG]   (s) attachClasses = false
+[DEBUG]   (s) cacheFile = C:\nxp\workspaces\sample\persistant-test\target\war\work\webapp-cache.xml
+[DEBUG]   (s) classesClassifier = classes
+[DEBUG]   (s) classesDirectory = C:\nxp\workspaces\sample\persistant-test\target\classes
+[DEBUG]   (f) escapedBackslashesInFilePath = false
+[DEBUG]   (s) failOnMissingWebXml = true
+[DEBUG]   (f) filteringDeploymentDescriptors = false
+[DEBUG]   (s) outputDirectory = C:\nxp\workspaces\sample\persistant-test\target
+[DEBUG]   (s) primaryArtifact = true
+[DEBUG]   (s) project = MavenProject: com.xyz:persistant-test:0.01-SNAPSHOT @ C:\nxp\workspaces\sample\persistant-test\pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@5fe8b721
+[DEBUG]   (s) useCache = false
+[DEBUG]   (s) warName = test
+[DEBUG]   (s) warSourceDirectory = C:\nxp\workspaces\sample\persistant-test\src\main\webapp
+[DEBUG]   (s) warSourceIncludes = **
+[DEBUG]   (s) webappDirectory = C:\nxp\workspaces\sample\persistant-test\target\test
+[DEBUG]   (s) workDirectory = C:\nxp\workspaces\sample\persistant-test\target\war\work
+[DEBUG] -- end configuration --
+[INFO] Packaging webapp
+[INFO] Assembling webapp [persistant-test] in [C:\nxp\workspaces\sample\persistant-test\target\test]
+[DEBUG] properties used {java.vendor=Oracle Corporation, env.SYSTEMROOT=C:\Windows, env.USERDOMAIN_ROAMINGPROFILE=WBI, env.DEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, env.PROMPT=$P$G, env.WDIR=C:\, os.name=Windows 7, env.FP_NO_HOST_CHECK=NO, sun.boot.class.path=C:\nxp\java\jdk1.8.0_77\jre\lib\resources.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\rt.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\sunrsasign.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jsse.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jce.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\charsets.jar;C:\nxp\java\jdk1.8.0_77\jre\lib\jfr.jar;C:\nxp\java\jdk1.8.0_77\jre\classes, env.COMPUTERNAME=NXL29002, env.ALLUSERSPROFILE=C:\ProgramData, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_77-b03, env.HOMEPATH=\, env.HOMESHARE=\\wbi.nxp.com\Users\nxa30710, user.name=nxa30710, maven.build.version=Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T22:11:47+05:30), env.WINDOWS_TRACING_FLAGS=3, env.PATH=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Git\cmd;C:\Users\nxa30710\AppData\Local\Android\Sdk\platform-tools;C:\Users\nxa30710\AppData\Local\Android\Sdk\tools;C:\nxp\java\jdk1.8.0_77\bin;C:\nxp\tools\apache-maven-3.3.9\bin;, user.language=en, env.WINDIR=C:\Windows, sun.boot.library.path=C:\nxp\java\jdk1.8.0_77\jre\bin, classworlds.conf=C:\nxp\tools\apache-maven-3.3.9\bin\..\bin\m2.conf, java.version=1.8.0_77, env.PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 61 Stepping 4, GenuineIntel, user.timezone=Asia/Calcutta, env.TEMP=C:\Users\nxa30710\AppData\Local\Temp, sun.arch.data.model=64, env.EXEC_DIR=C:\nxp\workspaces\sample\persistant-test, env.WINDOWS_TRACING_LOGFILE=C:\BVTBin\Tests\installpackage\csilogfile.log, env.APR_ICONV_PATH=C:\Program Files (x86)\Subversion\iconv, java.endorsed.dirs=C:\nxp\java\jdk1.8.0_77\jre\lib\endorsed, env.VSEDEFLOGDIR=C:\ProgramData\McAfee\DesktopProtection, sun.cpu.isalist=amd64, env.HOMEDRIVE=H:, sun.jnu.encoding=Cp1252, file.encoding.pkg=sun.io, env.SYSTEMDRIVE=C:, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=US, java.home=C:\nxp\java\jdk1.8.0_77\jre, env.ANDROID_HOME=C:\Users\nxa30710\AppData\Local\Android\Sdk, env.APPDATA=C:\Users\nxa30710\AppData\Roaming, env.PUBLIC=C:\Users\Public, java.vm.info=mixed mode, env.OS=Windows_NT, os.version=6.1, env.=::=::\, path.separator=;, java.vm.version=25.77-b03, user.variant=, env.USERPROFILE=C:\Users\nxa30710, env.JAVA_HOME=C:\nxp\java\jdk1.8.0_77, java.awt.printerjob=sun.awt.windows.WPrinterJob, env.TMP=C:\Users\nxa30710\AppData\Local\Temp, env.PROGRAMFILES=C:\Program Files, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, env.OSTYPE=6.1.7601.23250, user.script=, user.home=C:\Users\nxa30710, env.COMMONPROGRAMFILES=C:\Program Files\Common Files, env.SESSIONNAME=Console, java.specification.vendor=Oracle Corporation, env.M2_HOME=C:\nxp\tools\apache-maven-3.3.9\bin\.., java.vendor.url=http://java.oracle.com/, env.NUMBER_OF_PROCESSORS=4, java.library.path=C:\nxp\java\jdk1.8.0_77\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Subversion\bin;C:\Program Files\Git\cmd;C:\Users\nxa30710\AppData\Local\Android\Sdk\platform-tools;C:\Users\nxa30710\AppData\Local\Android\Sdk\tools;C:\nxp\java\jdk1.8.0_77\bin;C:\nxp\tools\apache-maven-3.3.9\bin;;., env.CLASSWORLDS_LAUNCHER=org.codehaus.plexus.classworlds.launcher.Launcher, env.PSMODULEPATH=C:\Windows\system32\WindowsPowerShell\v1.0\Modules\, env.USERDNSDOMAIN=WBI.NXP.COM, env.COMMONPROGRAMFILES(X86)=C:\Program Files (x86)\Common Files, env.MAVEN_CMD_LINE_ARGS=clean install -X, java.vm.vendor=Oracle Corporation, java.runtime.name=Java(TM) SE Runtime Environment, maven.home=C:\nxp\tools\apache-maven-3.3.9\bin\.., java.class.path=C:\nxp\tools\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher clean install -X, env.PROGRAMW6432=C:\Program Files, maven.version=3.3.9, env.MAVEN_JAVA_EXE="C:\nxp\java\jdk1.8.0_77\bin\java.exe", env.PROGRAMFILES(X86)=C:\Program Files (x86), java.vm.specification.name=Java Virtual Machine Specification, env.LOGONSERVER=\\INGBTCPIC6DC200, env.PROCESSOR_ARCHITECTURE=AMD64, java.vm.specification.version=1.8, env.COMMONPROGRAMW6432=C:\Program Files\Common Files, sun.os.patch.level=Service Pack 1, sun.cpu.endian=little, env.HOME=H:\, env.PROCESSOR_REVISION=3d04, env.UATDATA=C:\Windows\SysWOW64\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77, java.io.tmpdir=C:\Users\nxa30710\AppData\Local\Temp\, maven.multiModuleProjectDirectory=C:\nxp\workspaces\sample\persistant-test, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, env.COMSPEC=C:\Windows\system32\cmd.exe, env.PROGRAMDATA=C:\ProgramData, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, os.arch=amd64, java.ext.dirs=C:\nxp\java\jdk1.8.0_77\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, env.LOCALAPPDATA=C:\Users\nxa30710\AppData\Local, user.dir=C:\nxp\workspaces\sample\persistant-test, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, env.CLASSWORLDS_JAR="C:\nxp\tools\apache-maven-3.3.9\bin\..\boot\plexus-classworlds-2.5.2.jar", env.PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC, env.ERROR_CODE=0, env.USERNAME=nxa30710, file.encoding=Cp1252, sun.stderr.encoding=cp437, env.USERDOMAIN=WBI, java.specification.version=1.8, env.=C:=C:\nxp\workspaces\sample\persistant-test, env.MVN_HOME=C:\nxp\tools\apache-maven-3.3.9, env.MAVEN_PROJECTBASEDIR=C:\nxp\workspaces\sample\persistant-test, env.PROCESSOR_LEVEL=6}
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\nxp\workspaces\sample\persistant-test\src\main\webapp]
+[DEBUG]  + index.html has been copied.
+[DEBUG]  + WEB-INF/web.xml has been copied.
+[DEBUG] Dump of the current build pathSet content -->
+[DEBUG] index.html
+[DEBUG] WEB-INF/web.xml
+[DEBUG] -- end of dump --
+[DEBUG]  + WEB-INF/classes/com/xyz/Entity.class has been copied.
+[DEBUG]  + WEB-INF/classes/com/xyz/KeyReference.class has been copied.
+[DEBUG]  + WEB-INF/classes/com/xyz/KeyTypeEnum.class has been copied.
+[DEBUG]  + WEB-INF/classes/com/xyz/PingResource.class has been copied.
+[DEBUG]  + WEB-INF/classes/com/xyz/TestPersistant.class has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_check_constraints_to_cardissuer.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_field_applicationprovider_registrationconfirmedon.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_field_cardissuer_registrationconfirmedon.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_field_card_type_to_cardissuer.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_indices.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_indices_for_key_refs.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_not_null_constr_approvedapplication_approvalon.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_system_property_STORE_DEPLOYMENT_NAME.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/add_table_send_email_queue_entry.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf110394.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf110523.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf110535.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf110536.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf110543.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf110548.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf110958.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf111357.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf111544.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf111567.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf111585.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf111871.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf111893.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf112008.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf112092.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf112113.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf112139.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf112603.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf113997.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf114000.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf127211.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf152926.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf153067.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf153105.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf153314.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf153334.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf153340.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/changeset-artf155372.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/dbchangelog.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/liquibase.properties has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/make_application_appprovidername_not_null.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/max_length_of_email_address_is_254.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/migrate_to_PBKDF2WithHmacSHA512.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/remove_dedicatedslot_damslotversion.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/rename_fixedsizeslot_to_sharedslot.xml has been copied.
+[DEBUG]  + WEB-INF/classes/liquibase/set_default_development_keys.xml has been copied.
+[DEBUG]  + WEB-INF/classes/META-INF/persistence.xml has been copied.
+[DEBUG] Processing: hibernate-entitymanager-5.0.1.Final.jar
+[DEBUG]  + WEB-INF/lib/hibernate-entitymanager-5.0.1.Final.jar has been copied.
+[DEBUG] Processing: jboss-logging-3.3.0.Final.jar
+[DEBUG]  + WEB-INF/lib/jboss-logging-3.3.0.Final.jar has been copied.
+[DEBUG] Processing: hibernate-core-5.0.1.Final.jar
+[DEBUG]  + WEB-INF/lib/hibernate-core-5.0.1.Final.jar has been copied.
+[DEBUG] Processing: antlr-2.7.7.jar
+[DEBUG]  + WEB-INF/lib/antlr-2.7.7.jar has been copied.
+[DEBUG] Processing: jandex-1.2.2.Final.jar
+[DEBUG]  + WEB-INF/lib/jandex-1.2.2.Final.jar has been copied.
+[DEBUG] Processing: dom4j-1.6.1.jar
+[DEBUG]  + WEB-INF/lib/dom4j-1.6.1.jar has been copied.
+[DEBUG] Processing: xml-apis-1.0.b2.jar
+[DEBUG]  + WEB-INF/lib/xml-apis-1.0.b2.jar has been copied.
+[DEBUG] Processing: hibernate-commons-annotations-5.0.0.Final.jar
+[DEBUG]  + WEB-INF/lib/hibernate-commons-annotations-5.0.0.Final.jar has been copied.
+[DEBUG] Processing: hibernate-jpa-2.1-api-1.0.0.Final.jar
+[DEBUG]  + WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar has been copied.
+[DEBUG] Processing: geronimo-jta_1.1_spec-1.1.1.jar
+[DEBUG]  + WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar has been copied.
+[DEBUG] Processing: javassist-3.18.1-GA.jar
+[DEBUG]  + WEB-INF/lib/javassist-3.18.1-GA.jar has been copied.
+[DEBUG] Processing: hibernate-validator-5.0.1.Final.jar
+[DEBUG]  + WEB-INF/lib/hibernate-validator-5.0.1.Final.jar has been copied.
+[DEBUG] Processing: validation-api-1.1.0.Final.jar
+[DEBUG]  + WEB-INF/lib/validation-api-1.1.0.Final.jar has been copied.
+[DEBUG] Processing: classmate-0.8.0.jar
+[DEBUG]  + WEB-INF/lib/classmate-0.8.0.jar has been copied.
+[DEBUG] Processing: slf4j-api-1.7.12.jar
+[DEBUG]  + WEB-INF/lib/slf4j-api-1.7.12.jar has been copied.
+[DEBUG] Processing: log4j-core-2.3.jar
+[DEBUG]  + WEB-INF/lib/log4j-core-2.3.jar has been copied.
+[DEBUG] Processing: log4j-api-2.3.jar
+[DEBUG]  + WEB-INF/lib/log4j-api-2.3.jar has been copied.
+[DEBUG] Processing: log4j-slf4j-impl-2.3.jar
+[DEBUG]  + WEB-INF/lib/log4j-slf4j-impl-2.3.jar has been copied.
+[DEBUG] Processing: junit-4.10.jar
+[DEBUG]  + WEB-INF/lib/junit-4.10.jar has been copied.
+[DEBUG] Processing: hamcrest-core-1.1.jar
+[DEBUG]  + WEB-INF/lib/hamcrest-core-1.1.jar has been copied.
+[DEBUG] Processing: allcards-apdumagic-4.1.1604.jar
+[DEBUG]  + WEB-INF/lib/allcards-apdumagic-4.1.1604.jar has been copied.
+[DEBUG] Processing: jsr311-api-1.1.1.jar
+[DEBUG]  + WEB-INF/lib/jsr311-api-1.1.1.jar has been copied.
+[DEBUG] Processing: jersey-guice-1.19.jar
+[DEBUG]  + WEB-INF/lib/jersey-guice-1.19.jar has been copied.
+[DEBUG] Processing: javax.inject-1.jar
+[DEBUG]  + WEB-INF/lib/javax.inject-1.jar has been copied.
+[DEBUG] Processing: guice-3.0.jar
+[DEBUG]  + WEB-INF/lib/guice-3.0.jar has been copied.
+[DEBUG] Processing: aopalliance-1.0.jar
+[DEBUG]  + WEB-INF/lib/aopalliance-1.0.jar has been copied.
+[DEBUG] Processing: guice-servlet-3.0.jar
+[DEBUG]  + WEB-INF/lib/guice-servlet-3.0.jar has been copied.
+[DEBUG] Processing: jersey-servlet-1.19.jar
+[DEBUG]  + WEB-INF/lib/jersey-servlet-1.19.jar has been copied.
+[DEBUG] Processing: jersey-server-1.19.jar
+[DEBUG]  + WEB-INF/lib/jersey-server-1.19.jar has been copied.
+[DEBUG] Processing: jersey-core-1.19.jar
+[DEBUG]  + WEB-INF/lib/jersey-core-1.19.jar has been copied.
+[INFO] Webapp assembled in [316 msecs]
+[DEBUG] Excluding [] from the generated webapp archive.
+[DEBUG] Including [**] in the generated webapp archive.
+[INFO] Building war: C:\nxp\workspaces\sample\persistant-test\target\test.war
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding directory WEB-INF/
+[DEBUG] adding directory WEB-INF/classes/
+[DEBUG] adding directory WEB-INF/classes/com/
+[DEBUG] adding directory WEB-INF/classes/com/xyz/
+[DEBUG] adding directory WEB-INF/classes/liquibase/
+[DEBUG] adding directory WEB-INF/classes/META-INF/
+[DEBUG] adding directory WEB-INF/lib/
+[DEBUG] adding entry index.html
+[DEBUG] adding entry WEB-INF/classes/com/xyz/Entity.class
+[DEBUG] adding entry WEB-INF/classes/com/xyz/KeyReference.class
+[DEBUG] adding entry WEB-INF/classes/com/xyz/KeyTypeEnum.class
+[DEBUG] adding entry WEB-INF/classes/com/xyz/PingResource.class
+[DEBUG] adding entry WEB-INF/classes/com/xyz/TestPersistant.class
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_check_constraints_to_cardissuer.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_field_applicationprovider_registrationconfirmedon.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_field_cardissuer_registrationconfirmedon.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_field_card_type_to_cardissuer.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_indices.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_indices_for_key_refs.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_not_null_constr_approvedapplication_approvalon.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_system_property_STORE_DEPLOYMENT_NAME.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/add_table_send_email_queue_entry.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf110394.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf110523.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf110535.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf110536.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf110543.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf110548.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf110958.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf111357.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf111544.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf111567.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf111585.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf111871.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf111893.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf112008.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf112092.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf112113.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf112139.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf112603.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf113997.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf114000.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf127211.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf152926.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf153067.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf153105.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf153314.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf153334.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf153340.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/changeset-artf155372.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/dbchangelog.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/liquibase.properties
+[DEBUG] adding entry WEB-INF/classes/liquibase/make_application_appprovidername_not_null.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/max_length_of_email_address_is_254.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/migrate_to_PBKDF2WithHmacSHA512.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/remove_dedicatedslot_damslotversion.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/rename_fixedsizeslot_to_sharedslot.xml
+[DEBUG] adding entry WEB-INF/classes/liquibase/set_default_development_keys.xml
+[DEBUG] adding entry WEB-INF/classes/META-INF/persistence.xml
+[DEBUG] adding entry WEB-INF/lib/allcards-apdumagic-4.1.1604.jar
+[DEBUG] adding entry WEB-INF/lib/antlr-2.7.7.jar
+[DEBUG] adding entry WEB-INF/lib/aopalliance-1.0.jar
+[DEBUG] adding entry WEB-INF/lib/classmate-0.8.0.jar
+[DEBUG] adding entry WEB-INF/lib/dom4j-1.6.1.jar
+[DEBUG] adding entry WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar
+[DEBUG] adding entry WEB-INF/lib/guice-3.0.jar
+[DEBUG] adding entry WEB-INF/lib/guice-servlet-3.0.jar
+[DEBUG] adding entry WEB-INF/lib/hamcrest-core-1.1.jar
+[DEBUG] adding entry WEB-INF/lib/hibernate-commons-annotations-5.0.0.Final.jar
+[DEBUG] adding entry WEB-INF/lib/hibernate-core-5.0.1.Final.jar
+[DEBUG] adding entry WEB-INF/lib/hibernate-entitymanager-5.0.1.Final.jar
+[DEBUG] adding entry WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar
+[DEBUG] adding entry WEB-INF/lib/hibernate-validator-5.0.1.Final.jar
+[DEBUG] adding entry WEB-INF/lib/jandex-1.2.2.Final.jar
+[DEBUG] adding entry WEB-INF/lib/javassist-3.18.1-GA.jar
+[DEBUG] adding entry WEB-INF/lib/javax.inject-1.jar
+[DEBUG] adding entry WEB-INF/lib/jboss-logging-3.3.0.Final.jar
+[DEBUG] adding entry WEB-INF/lib/jersey-core-1.19.jar
+[DEBUG] adding entry WEB-INF/lib/jersey-guice-1.19.jar
+[DEBUG] adding entry WEB-INF/lib/jersey-server-1.19.jar
+[DEBUG] adding entry WEB-INF/lib/jersey-servlet-1.19.jar
+[DEBUG] adding entry WEB-INF/lib/jsr311-api-1.1.1.jar
+[DEBUG] adding entry WEB-INF/lib/junit-4.10.jar
+[DEBUG] adding entry WEB-INF/lib/log4j-api-2.3.jar
+[DEBUG] adding entry WEB-INF/lib/log4j-core-2.3.jar
+[DEBUG] adding entry WEB-INF/lib/log4j-slf4j-impl-2.3.jar
+[DEBUG] adding entry WEB-INF/lib/slf4j-api-1.7.12.jar
+[DEBUG] adding entry WEB-INF/lib/validation-api-1.1.0.Final.jar
+[DEBUG] adding entry WEB-INF/lib/xml-apis-1.0.b2.jar
+[DEBUG] adding entry WEB-INF/web.xml
+[INFO] WEB-INF\web.xml already added, skipping
+[DEBUG] adding directory META-INF/maven/
+[DEBUG] adding directory META-INF/maven/com.xyz/
+[DEBUG] adding directory META-INF/maven/com.xyz/persistant-test/
+[DEBUG] adding entry META-INF/maven/com.xyz/persistant-test/pom.xml
+[DEBUG] adding entry META-INF/maven/com.xyz/persistant-test/pom.properties
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ persistant-test ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=38, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=35, DefaultDependencyCollector.collectTime=13, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.apache.maven.plugins:maven-install-plugin:jar:2.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-digest:jar:1.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-install-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-digest:jar:1.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-install-plugin:2.4:install from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-install-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@5c647e05]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-install-plugin:2.4:install' with basic configurator -->
+[DEBUG]   (f) artifact = com.xyz:persistant-test:war:0.01-SNAPSHOT
+[DEBUG]   (f) attachedArtifacts = []
+[DEBUG]   (f) createChecksum = false
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///C:/Users/nxa30710/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) packaging = war
+[DEBUG]   (f) pomFile = C:\nxp\workspaces\sample\persistant-test\pom.xml
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) updateReleaseInfo = false
+[DEBUG] -- end configuration --
+[INFO] Installing C:\nxp\workspaces\sample\persistant-test\target\test.war to C:\Users\nxa30710\.m2\repository\com\xyz\persistant-test\0.01-SNAPSHOT\persistant-test-0.01-SNAPSHOT.war
+[DEBUG] Writing tracking file C:\Users\nxa30710\.m2\repository\com\xyz\persistant-test\0.01-SNAPSHOT\_remote.repositories
+[INFO] Installing C:\nxp\workspaces\sample\persistant-test\pom.xml to C:\Users\nxa30710\.m2\repository\com\xyz\persistant-test\0.01-SNAPSHOT\persistant-test-0.01-SNAPSHOT.pom
+[DEBUG] Writing tracking file C:\Users\nxa30710\.m2\repository\com\xyz\persistant-test\0.01-SNAPSHOT\_remote.repositories
+[DEBUG] Installing com.xyz:persistant-test:0.01-SNAPSHOT/maven-metadata.xml to C:\Users\nxa30710\.m2\repository\com\xyz\persistant-test\0.01-SNAPSHOT\maven-metadata-local.xml
+[DEBUG] Installing com.xyz:persistant-test/maven-metadata.xml to C:\Users\nxa30710\.m2\repository\com\xyz\persistant-test\maven-metadata-local.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.299 s
+[INFO] Finished at: 2016-05-27T12:25:56+05:30
+[INFO] Final Memory: 25M/297M
+[INFO] ------------------------------------------------------------------------

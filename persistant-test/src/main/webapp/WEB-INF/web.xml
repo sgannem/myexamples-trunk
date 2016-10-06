@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>testrestful</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<!-- <servlet> <servlet-name>jersey-serlvet</servlet-name> <servlet-class> 
+		com.sun.jersey.spi.container.servlet.ServletContainer </servlet-class> <init-param> 
+		<param-name>com.sun.jersey.config.property.packages</param-name> <param-value>com.xyz</param-value> 
+		</init-param> <load-on-startup>1</load-on-startup> </servlet> <servlet-mapping> 
+		<servlet-name>jersey-serlvet</servlet-name> <url-pattern>/rest/*</url-pattern> 
+		</servlet-mapping> -->
+
+	<filter>
+		<filter-name>LogFilter</filter-name>
+		<filter-class>com.xyz.LogFilter</filter-class>
+
+		<init-param>
+			<param-name>dropurl.0</param-name>
+			<param-value>/rest/monitoring</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>LogFilter</filter-name>
+		<url-pattern>/rest/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>guiceFilter</filter-name>
+		<filter-class>com.google.inject.servlet.GuiceFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>guiceFilter</filter-name>
+		<url-pattern>/rest/*</url-pattern>
+	</filter-mapping>
+
+	<context-param>
+		<param-name>liquibase.changelog</param-name>
+		<param-value>liquibase/dbchangelog.xml</param-value>
+	</context-param>
+
+	<context-param>
+		<param-name>liquibase.datasource</param-name>
+		<param-value>java://comp/env/jdbc/appstore</param-value>
+	</context-param>
+
+	<listener>
+		<listener-class>liquibase.integration.servlet.LiquibaseServletListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>com.xyz.AdminServletContextListener</listener-class>
+	</listener>
+
+
+</web-app>

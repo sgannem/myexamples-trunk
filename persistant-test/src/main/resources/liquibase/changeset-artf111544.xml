@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf11544.xml">
+
+
+  <changeSet author="gm" id="renaming existing columns in application provider table">
+
+    <renameColumn newColumnName="appprovidername"
+                  oldColumnName="company"
+                  tableName="applicationprovider"/>
+
+    <renameColumn newColumnName="appname"
+                  oldColumnName="applicationname"
+                  tableName="applicationprovider"/>
+
+    <renameColumn newColumnName="description"
+                  oldColumnName="shortdescription"
+                  tableName="applicationprovider"/>
+
+    <renameColumn newColumnName="appproviderpersoendpointurl"
+                  oldColumnName="referencetoapplicationproviderbackend"
+                  tableName="applicationprovider"/>
+
+    <renameColumn newColumnName="enckey"
+                  oldColumnName="standardkey"
+                  tableName="applicationprovider"/>
+
+  </changeSet>
+
+
+  <changeSet author="gm" id="adding existing columns in application provider table">
+
+    <addColumn tableName="applicationprovider">
+      <column name="quotalimit" type="INT" defaultValue="0" />
+    </addColumn>
+
+    <!-- 2 Bytes as Hex String -->
+    <addColumn tableName="applicationprovider">
+      <column name="dfname" type="varchar(16)" defaultValue="0000"/>
+    </addColumn>
+
+    <!-- 16 Bytes as Hex String -->
+    <addColumn tableName="applicationprovider">
+      <column name="isofileid" type="varchar(32)" defaultValue="Default"/>
+    </addColumn>
+
+    <addColumn tableName="applicationprovider">
+      <column name="appproviderdeleteendpointurl" type="varchar(1024)" defaultValue="https://www.endpoint.com"/>
+    </addColumn>
+
+    <addColumn tableName="applicationprovider">
+      <column name="logourl" type="varchar(128)" defaultValue="https://www.logo.com"/>
+    </addColumn>
+
+  </changeSet>
+</databaseChangeLog>

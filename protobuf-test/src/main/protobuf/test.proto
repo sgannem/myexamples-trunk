@@ -1,0 +1,5 @@
+package com.xyz.protobuf;
+
+message Test {
+ required string id;
+ }

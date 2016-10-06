@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf112008.xml">
+
+
+  <changeSet author="gm" id="remove columns from application provider table">
+
+    <dropColumn columnName="appprovidername"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="appname"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="description"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="appproviderpersoendpointurl"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="enckey"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="quotalimit"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="dfname"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="isofileid"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="appproviderdeleteendpointurl"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="logourl"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="preferredaid"
+                tableName="applicationprovider"/>
+
+    <dropColumn columnName="numberofkeys"
+                tableName="applicationprovider"/>
+
+  </changeSet>
+
+
+  <changeSet author="gm" id="creating dedicated application table">
+    <createTable tableName="application">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="version" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="applicationprovider_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="appprovidername" type="VARCHAR(128)"/>
+      <column name="appname" type="VARCHAR(128)"/>
+      <column name="description" type="VARCHAR(1024)"/>
+      <column name="appproviderpersoendpointurl" type="VARCHAR(1024)"/>
+      <column name="preferredaid" type="INT"/>
+      <column name="numberofkeys" type="INT"/>
+      <column name="enckey" type="VARCHAR(48)"/>
+      <column name="quotalimit" type="INT"/>
+      <column name="dfname" type="VARCHAR(32)"/>
+      <column name="isofileid" type="VARCHAR(4)"/>
+      <column name="appproviderdeleteendpointurl" type="VARCHAR(1024)"/>
+      <column name="logo" type="BYTEA"/>
+
+    </createTable>
+
+    <addForeignKeyConstraint baseColumnNames="applicationprovider_id"
+                             baseTableName="application"
+                             constraintName="fk_applicationprovider_id"
+                             onDelete="CASCADE"
+                             onUpdate="RESTRICT"
+                             referencedColumnNames="id"
+                             referencedTableName="applicationprovider"/>
+  </changeSet>
+
+  <changeSet author="gm" id="change relation">
+
+    <!-- removing FK in approved application table -->
+    <dropForeignKeyConstraint baseTableName="approvedapplication" constraintName="fk_application_provider_id"/>
+
+    <renameColumn newColumnName="application_id"
+                  oldColumnName="applicationprovider_id"
+                  tableName="approvedapplication"/>
+
+    <addForeignKeyConstraint baseColumnNames="application_id"
+                             baseTableName="approvedapplication"
+                             constraintName="fk_application_id"
+                             onDelete="CASCADE"
+                             onUpdate="RESTRICT"
+                             referencedColumnNames="id"
+                             referencedTableName="application"/>
+  </changeSet>
+
+
+</databaseChangeLog>

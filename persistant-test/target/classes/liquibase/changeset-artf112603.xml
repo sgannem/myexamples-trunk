@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf112603.xml">
+
+  <changeSet author="mr" id="add field application.areShortFileIdsSupported">
+    <addColumn tableName="application">
+      <column name="areshortfileidssupported" type="BOOLEAN" defaultValue="false">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+
+    <rollback>
+      <dropColumn tableName="application" columnName="areshortfileidssupported"/>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="mr" id="add configuration for EV1 key settings to system properties">
+    <insert tableName="systemproperty">
+      <column name="key" value="KSONE_CONFIG_CHANGABLE"/>
+      <column name="value" value="True"/>
+    </insert>
+
+    <insert tableName="systemproperty">
+      <column name="key" value="KSONE_PICC_MKEY_CHANGABLE"/>
+      <column name="value" value="True"/>
+    </insert>
+
+    <insert tableName="systemproperty">
+      <column name="key" value="KSONE_READ_DIR_WITHOUT_PICC_MKEY_AUTH"/>
+      <column name="value" value="False"/>
+    </insert>
+
+    <insert tableName="systemproperty">
+      <column name="key" value="KSONE_CREATE_DELETE_APP_WITHOUT_PICC_MKEY_AUTH"/>
+      <column name="value" value="False"/>
+    </insert>
+
+    <insert tableName="systemproperty">
+      <column name="key" value="KSTWO_APP_CRYPTO_METHOD"/>
+      <column name="value" value="AES"/>
+    </insert>
+
+    <rollback>
+      <delete tableName="systemproperty">
+        <where>key IN ('KSONE_CONFIG_CHANGABLE', 'KSONE_PICC_MKEY_CHANGABLE', 'KSONE_READ_DIR_WITHOUT_PICC_MKEY_AUTH',
+          'KSONE_CREATE_DELETE_APP_WITHOUT_PICC_MKEY_AUTH', 'KSTWO_APP_CRYPTO_METHOD')</where>
+      </delete>
+    </rollback>
+  </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="add_table_send_email_queue_entry.xml">
+
+  <changeSet author="az" id="create table sendemailqueueentry">
+    <createTable tableName="sendemailqueueentry">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+
+      <column name="emailaddress" type="VARCHAR(254)">
+        <constraints nullable="false"/>
+      </column>
+
+
+      <column name="textfileattachmentfilename" type="VARCHAR(100)"/>
+      <column name="textfileattachmentdescription" type="VARCHAR(250)"/>
+
+      <column name="insertedon" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+  </changeSet>
+
+  <!-- postgres and h2 (test database) have different types for long strings, so we use two different changesets, one for each DBMS -->
+  <changeSet author="az" id="add fields subject, message,textfileattachmentcontent to sendemailqueueentry" dbms="postgresql">
+    <addColumn tableName="sendemailqueueentry">
+      <column name="subject" type="TEXT">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+
+    <addColumn tableName="sendemailqueueentry">
+      <column name="message" type="TEXT">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+
+    <addColumn tableName="sendemailqueueentry">
+      <column name="textfileattachmentcontent" type="TEXT"/>
+    </addColumn>
+  </changeSet>
+
+  <changeSet author="az" id="add fields subject, message,textfileattachmentcontent to sendemailqueueentry" dbms="h2">
+    <addColumn tableName="sendemailqueueentry">
+      <column name="subject" type="VARCHAR(100)">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+
+    <addColumn tableName="sendemailqueueentry">
+      <column name="message" type="VARCHAR(200)">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+
+    <addColumn tableName="sendemailqueueentry">
+      <column name="textfileattachmentcontent" type="VARCHAR(1000)"/>
+    </addColumn>
+  </changeSet>
+</databaseChangeLog>

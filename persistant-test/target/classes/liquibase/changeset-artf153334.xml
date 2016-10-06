@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf153334.xml">
+
+  <changeSet author="az" id="add field approvedapplication.approvaltype">
+    <addColumn tableName="approvedapplication">
+      <column name="approvaltype" type="VARCHAR(30)"/>
+    </addColumn>
+
+    <update tableName="approvedapplication">
+      <column name="approvaltype" value="FOR_EV1_CARD"/>
+      <where>approvalon IS NOT NULL</where>
+    </update>
+
+    <rollback>
+      <dropColumn tableName="approvedapplication" columnName="approvaltype"/>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="add field cardissuer.hasfixedsizeslotapproval">
+    <addColumn tableName="cardissuer">
+      <column name="hasfixedsizeslotapproval" type="BOOLEAN" defaultValue="false">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+  </changeSet>
+</databaseChangeLog>

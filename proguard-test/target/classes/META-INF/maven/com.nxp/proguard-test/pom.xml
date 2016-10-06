@@ -1,0 +1,54 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.nxp</groupId>
+  <artifactId>proguard-test</artifactId>
+  <version>1.0.2</version>
+  <packaging>jar</packaging>
+  <name>proguard-test</name>
+  <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <maven.compiler.target>1.7</maven.compiler.target>
+      <maven.compiler.source>1.7</maven.compiler.source>
+   </properties>
+   
+   <build>
+  <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>2.3</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals><goal>shade</goal></goals>
+                </execution>
+            </executions>
+            <configuration>
+                <artifactSet>
+                    <includes>
+                        <include>com.xyz.model.beans.*:*</include>
+                    </includes>
+
+                    <!--
+                        maven-shade-plugin experiences issues shading DLLs.
+                        Unfortunately, our application has several.
+                        You could also place some modules you don't want obfuscate.
+                    -->
+                    <excludes>
+                       <!-- <exclude>com.yourcompany:native-library</exclude>
+                        <exclude>com.yourcompany:another-native-library</exclude>-->
+                    </excludes>
+                </artifactSet>
+
+                <transformers>
+                    <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                        <!-- This is entry point of your jar -->
+                        <mainClass>com.xyz.test.TestPerson</mainClass>
+                    </transformer>
+                </transformers>
+            </configuration>
+        </plugin>
+    </plugins>
+  </build>
+</project>

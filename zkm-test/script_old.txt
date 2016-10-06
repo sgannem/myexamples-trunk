@@ -1,0 +1,22 @@
+//System varaibles shown in blue. These will be replaced with their corresponding values.
+classpath "%classpathLibs%"
+          "%compileArtifactPath%"
+          "%pluginArtifactPath%"
+          ;
+
+open      "%project.build.directory%%file.separator%%project.build.finalName%.%project.packaging%";
+
+//trimExclude *.*^ public static main(java.lang.String[]);
+
+//trim;
+
+exclude     *.^*^ public static main(java.lang.String[]);
+
+//obfuscate   keepInnerClassInfo=false
+//            keepGenericsInfo=%myProperty0%
+//            obfuscateFlow=aggressive
+//            exceptionObfuscation=heavy
+//            encryptStringLiterals=flowObfuscate
+//            ;
+
+saveAll   "%project.build.directory%";

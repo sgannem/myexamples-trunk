@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="add_field_card_type_to_cardissuer.xml">
+
+  <changeSet author="az" id="add field cardissuer.cardtype">
+    <addColumn tableName="cardissuer">
+      <column name="cardtype" type="VARCHAR(20)">
+        <constraints nullable="true"/>
+      </column>
+    </addColumn>
+  </changeSet>
+
+  <changeSet author="az" id="set cardissuer.cardtype to EV1">
+    <update tableName="cardissuer">
+      <column name="cardtype" value="EV1"/>
+    </update>
+
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="set dam key refs to null for EV1 cards">
+    <update tableName="cardissuer">
+      <column name="damauthkeyref_id"/>
+      <column name="dammackeyref_id"/>
+      <column name="damenckeyref_id"/>
+      <where>cardtype='EV1'</where>
+    </update>
+
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="set ev1masterkeyref to null for EV2 cards">
+    <update tableName="cardissuer">
+      <column name="ev1masterkeyref_id"/>
+      <where>cardtype='EV2'</where>
+    </update>
+
+    <rollback/>
+  </changeSet>
+</databaseChangeLog>

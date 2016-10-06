@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf110548.xml">
+
+  <changeSet author="az" id="rename constraint reportlog.fk_reportlog_administrator_id to fk_reportlog_receiver_id">
+    <dropForeignKeyConstraint baseTableName="reportlog" constraintName="fk_reportlog_administrator_id"/>
+
+    <rollback>
+      <addForeignKeyConstraint baseColumnNames="administrator_id"
+                               baseTableName="reportlog"
+                               constraintName="fk_reportlog_administrator_id"
+                               onDelete="CASCADE"
+                               onUpdate="RESTRICT"
+                               referencedColumnNames="id"
+                               referencedTableName="administrator"/>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="rename field reportlog.administrator_id to receiver_id">
+    <renameColumn newColumnName="receiver_id"
+                  oldColumnName="administrator_id"
+                  tableName="reportlog"/>
+  </changeSet>
+
+  <changeSet author="az" id="rename index reportlog.idx_reportlog_administrator_id to idx_reportlog_receiver_id">
+    <dropIndex tableName="reportlog" indexName="idx_reportlog_administrator_id"/>
+
+    <createIndex tableName="reportlog" indexName="idx_reportlog_receiver_id">
+      <column name="receiver_id"/>
+    </createIndex>
+
+    <rollback>
+      <dropIndex tableName="reportlog" indexName="idx_reportlog_receiver_id"/>
+
+      <createIndex tableName="reportlog" indexName="idx_reportlog_administrator_id">
+        <column name="receiver_id"/>
+      </createIndex>
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

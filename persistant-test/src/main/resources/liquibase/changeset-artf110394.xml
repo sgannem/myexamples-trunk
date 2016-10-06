@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf110394.xml">
+
+  <changeSet author="gm" id="create table applicationprovider">
+    <createTable tableName="applicationprovider">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="version" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="company" type="VARCHAR(128)"/>
+      <column name="applicationname" type="VARCHAR(128)"/>
+      <column name="shortdescription" type="VARCHAR(1024)"/>
+      <column name="referencetoapplicationproviderbackend" type="VARCHAR(1024)"/>
+      <column name="preferredaid" type="INT"/>
+      <column name="numberofkeys" type="INT"/>
+      <column name="standardkey" type="VARCHAR(48)"/>
+    </createTable>
+
+    <createSequence schemaName="public" sequenceName="applicationprovider_sequence"/>
+  </changeSet>
+
+  <changeSet author="gm" id="create table cardissuer">
+    <createTable tableName="cardissuer">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="version" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="company" type="VARCHAR(128)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <createSequence schemaName="public" sequenceName="cardissuer_sequence"/>
+  </changeSet>
+
+  <changeSet author="gm" id="create table approvedapplication">
+    <createTable tableName="approvedapplication">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="version" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="applicationprovider_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="cardissuer_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="aid" type="INT">
+        <constraints nullable="false"/>
+      </column>
+      <column name="approvalon" type="BIGINT">
+        <constraints nullable="true"/>
+      </column>
+      <column name="revocationon" type="BIGINT">
+        <constraints nullable="true"/>
+      </column>
+    </createTable>
+
+    <createSequence schemaName="public" sequenceName="approvedapplication_sequence"/>
+
+    <addForeignKeyConstraint baseColumnNames="applicationprovider_id"
+                             baseTableName="approvedapplication"
+                             constraintName="fk_application_provider_id"
+                             onDelete="CASCADE"
+                             onUpdate="RESTRICT"
+                             referencedColumnNames="id"
+                             referencedTableName="applicationprovider"/>
+
+    <addForeignKeyConstraint baseColumnNames="cardissuer_id"
+                             baseTableName="approvedapplication"
+                             constraintName="fk_card_issuer_id"
+                             onDelete="CASCADE"
+                             onUpdate="RESTRICT"
+                             referencedColumnNames="id"
+                             referencedTableName="cardissuer"/>
+  </changeSet>
+</databaseChangeLog>

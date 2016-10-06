@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="rename_fixedsizeslot_to_sharedslot.xml">
+
+  <changeSet author="az" id="rename fixedsizeslot to sharedslot in cardissuer fields">
+    <renameColumn tableName="cardissuer" oldColumnName="numberoffixedsizeslots" newColumnName="numberofsharedslots"/>
+    <renameColumn tableName="cardissuer" oldColumnName="sizeoffixedsizeslot" newColumnName="sizeofsharedslot"/>
+    <renameColumn tableName="cardissuer" oldColumnName="hasfixedsizeslotapproval" newColumnName="hassharedslotapproval"/>
+  </changeSet>
+
+  <changeSet author="az" id="rename constr_cardissuer_fixed_size_slot_settings to constr_cardissuer_shared_slot_settings" dbms="postgresql">
+    <sql>
+      ALTER TABLE cardissuer RENAME CONSTRAINT constr_cardissuer_fixed_size_slot_settings TO constr_cardissuer_shared_slot_settings;
+    </sql>
+
+    <rollback>
+      <sql>
+        ALTER TABLE cardissuer RENAME CONSTRAINT constr_cardissuer_shared_slot_settings TO constr_cardissuer_fixed_size_slot_settings;
+      </sql>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="replace FOR_FIXED_SIZE_SLOT with FOR_SHARED_SLOT in approvedapplication.approvaltype">
+    <update tableName="approvedapplication">
+      <column name="approvaltype" value="FOR_SHARED_SLOT"/>
+      <where>approvaltype='FOR_FIXED_SIZE_SLOT'</where>
+    </update>
+
+    <rollback>
+      <update tableName="approvedapplication">
+        <column name="approvaltype" value="FOR_FIXED_SIZE_SLOT"/>
+        <where>approvaltype='FOR_SHARED_SLOT'</where>
+      </update>
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

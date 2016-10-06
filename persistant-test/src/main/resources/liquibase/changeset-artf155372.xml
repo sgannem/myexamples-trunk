@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf155372.xml">
+
+  <changeSet author="az" id="use EV2 wording for fields of dedicatedslot">
+    <renameColumn tableName="dedicatedslot" oldColumnName="slotid" newColumnName="damslotno"/>
+    <renameColumn tableName="dedicatedslot" oldColumnName="slotversion" newColumnName="damslotversion"/>
+    <renameColumn tableName="dedicatedslot" oldColumnName="slotsize" newColumnName="quotalimit"/>
+  </changeSet>
+
+  <changeSet author="az" id="use EV2 wording for fields of cardissuer">
+    <renameColumn tableName="cardissuer" oldColumnName="sizeofsharedslot" newColumnName="quotalimitofsharedslot"/>
+  </changeSet>
+
+  <changeSet author="az" id="use EV2 wording for system property SLOT_QUOTA_SIZES">
+    <update tableName="systemproperty">
+      <column name="key" value="DAM_SLOT_QUOTA_LIMITS"/>
+      <where>key='SLOT_QUOTA_SIZES'</where>
+    </update>
+
+    <rollback>
+      <update tableName="systemproperty">
+        <column name="key" value="SLOT_QUOTA_SIZES"/>
+        <where>key='DAM_SLOT_QUOTA_LIMITS'</where>
+      </update>
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="set_default_development_keys.xml">
+
+  <changeSet author="az" id="set default DAM keys for development" dbms="postgresql">
+
+    <!-- set DAM Auth Key-->
+    <sql>
+      UPDATE keyreference SET key='\x10101010101010100123456789abcdef' WHERE id=2;
+      UPDATE cardissuer SET damauthkeyref_id=2  WHERE cardtype='EV2' AND damauthkeyref_id IS NOT NULL
+    </sql>
+
+    <!-- set DAM MAC Key-->
+    <sql>
+      UPDATE keyreference SET key='\x11111111111111110123456789abcdef' WHERE id=3;
+      UPDATE cardissuer SET dammackeyref_id=3  WHERE cardtype='EV2' AND dammackeyref_id IS NOT NULL
+    </sql>
+
+    <!-- set DAM Auth Key-->
+    <sql>
+      UPDATE keyreference SET key='\x12121212121212120123456789abcdef' WHERE id=4;
+      UPDATE cardissuer SET damenckeyref_id=4  WHERE cardtype='EV2' AND dammackeyref_id IS NOT NULL
+    </sql>
+
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="set default application master key key for development" dbms="postgresql">
+
+    <!-- set App DAM Default Key-->
+    <sql>
+      INSERT INTO keyreference (id, keytype, key) VALUES (5, 'AES', '\x404142434445464748494a4b4c4d4e4f');
+      UPDATE application SET applicationmasterkey_id=5  WHERE applicationmasterkey_id IS NOT NULL
+    </sql>
+
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="set default application master key key for development" dbms="h2">
+
+    <!-- set App DAM Default Key-->
+    <sql>
+      INSERT INTO keyreference (id, keytype, key) VALUES (5, 'AES', '404142434445464748494a4b4c4d4e4f');
+      UPDATE application SET applicationmasterkey_id=5  WHERE applicationmasterkey_id IS NOT NULL
+    </sql>
+
+    <rollback/>
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="add_indices.xml">
+
+  <changeSet author="az" id="add index on applicationinstallation.application_id">
+    <createIndex tableName="applicationinstallation" indexName="idx_applicationinstallation_application_id">
+      <column name="application_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on applicationinstallation.cardissuer_id">
+    <createIndex tableName="applicationinstallation" indexName="idx_applicationinstallation_cardissuer_id">
+      <column name="cardissuer_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on reportlog.administrator_id">
+    <createIndex tableName="reportlog" indexName="idx_reportlog_administrator_id">
+      <column name="administrator_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on approvedapplication.cardissuer_id">
+    <createIndex tableName="approvedapplication" indexName="idx_approvedapplication_cardissuer_id">
+      <column name="cardissuer_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on approvedapplication.application_id">
+    <createIndex tableName="approvedapplication" indexName="idx_approvedapplication_application_id">
+      <column name="application_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on application.applicationprovider_id">
+    <createIndex tableName="application" indexName="idx_application_applicationprovider_id">
+      <column name="applicationprovider_id"/>
+    </createIndex>
+  </changeSet>
+
+</databaseChangeLog>

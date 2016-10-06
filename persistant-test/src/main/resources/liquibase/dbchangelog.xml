@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="dbchangelog.xml">
+  <include relativeToChangelogFile="true" file="changeset-artf110394.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf111567.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf111585.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf111544.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf112008.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf110958.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf112113.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf112139.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf111871.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf110536.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf110535.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf112092.xml"/>
+  <include relativeToChangelogFile="true" file="add_indices.xml"/>
+  <include relativeToChangelogFile="true" file="make_application_appprovidername_not_null.xml"/>
+  <include relativeToChangelogFile="true" file="max_length_of_email_address_is_254.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf110543.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf113997.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf114000.xml"/>
+  <include relativeToChangelogFile="true" file="add_system_property_STORE_DEPLOYMENT_NAME.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf110523.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf111893.xml"/>
+  <include relativeToChangelogFile="true" file="add_field_card_type_to_cardissuer.xml"/>
+  <include relativeToChangelogFile="true" file="add_indices_for_key_refs.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf110548.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf127211.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf153067.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf153334.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf153314.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf153105.xml"/>
+  <include relativeToChangelogFile="true" file="add_check_constraints_to_cardissuer.xml"/>
+  <include relativeToChangelogFile="true" file="add_not_null_constr_approvedapplication_approvalon.xml"/>
+  <include relativeToChangelogFile="true" file="add_table_send_email_queue_entry.xml"/>
+  <include relativeToChangelogFile="true" file="migrate_to_PBKDF2WithHmacSHA512.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf152926.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf112603.xml"/>
+  <include relativeToChangelogFile="true" file="rename_fixedsizeslot_to_sharedslot.xml"/>
+  <include relativeToChangelogFile="true" file="add_field_applicationprovider_registrationconfirmedon.xml"/>
+  <include relativeToChangelogFile="true" file="add_field_cardissuer_registrationconfirmedon.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf155372.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf153340.xml"/>
+  <include relativeToChangelogFile="true" file="changeset-artf111357.xml"/>
+ <!--  <include relativeToChangelogFile="true" file="changeset-artf110522.xml"/> -->
+  <include relativeToChangelogFile="true" file="remove_dedicatedslot_damslotversion.xml"/>
+  <include relativeToChangelogFile="true" file="set_default_development_keys.xml"/>
+</databaseChangeLog>

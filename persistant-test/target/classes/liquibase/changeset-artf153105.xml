@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf153105.xml">
+
+  <changeSet author="az" id="add table dedicatedslot" dbms="postgresql">
+    <createTable tableName="dedicatedslot">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+
+      <column name="cardissuer_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="slotid" type="SMALLINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="slotversion" type="SMALLINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="slotsize" type="INT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="application_id" type="BIGINT"/>
+    </createTable>
+  </changeSet>
+
+  <changeSet author="az" id="add table dedicatedslot" dbms="h2">
+    <createTable tableName="dedicatedslot">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+
+      <column name="cardissuer_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="slotid" type="INT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="slotversion" type="INT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="slotsize" type="INT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="application_id" type="BIGINT"/>
+    </createTable>
+  </changeSet>
+
+  <changeSet author="az" id="add foreign key constraints to table dedicatedslot">
+    <addForeignKeyConstraint
+        baseTableName="dedicatedslot"
+        baseColumnNames="cardissuer_id"
+        constraintName="fk_dedicatedslot_cardissuer_id"
+        referencedTableName="cardissuer" referencedColumnNames="id"/>
+
+    <addForeignKeyConstraint
+        baseTableName="dedicatedslot"
+        baseColumnNames="application_id"
+        constraintName="fk_dedicatedslot_application_id"
+        referencedTableName="application" referencedColumnNames="id"/>
+  </changeSet>
+
+  <changeSet author="az" id="add index on dedicatedslot.cardissuer_id">
+    <createIndex tableName="dedicatedslot" indexName="idx_dedicatedslot_cardissuer_id">
+      <column name="cardissuer_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on dedicatedslot.application_id">
+    <createIndex tableName="dedicatedslot" indexName="idx_dedicatedslot_application_id">
+      <column name="application_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add unique constraint on (cardissuer_id, slotid) to dedicatedslot">
+    <addUniqueConstraint tableName="dedicatedslot" columnNames="cardissuer_id,slotid"
+                         constraintName="constr_dedicatedslot_cardissuer_id_slotid_key"/>
+  </changeSet>
+
+  <changeSet author="az" id="add entry for table dedicatedslot to hibernate_sequences">
+    <insert tableName="hibernate_sequences">
+      <column name="sequence_name" value="dedicatedslot"/>
+      <column name="next_val" value="51"/>
+    </insert>
+
+    <rollback/>
+  </changeSet>
+</databaseChangeLog>

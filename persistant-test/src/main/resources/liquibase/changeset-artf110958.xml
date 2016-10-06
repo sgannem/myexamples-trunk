@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf110958.xml">
+
+  <changeSet id="az" author="add table administrator">
+    <createTable tableName="administrator">
+      <column name="username" type="varchar(50)">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+      <column name="passwordhash" type="BYTEA"/>
+      <column name="salt" type="BYTEA" defaultValue="\x00000000000000000000000000000000"/>
+      <column name="iterations" type="INT" defaultValue="8192">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <addUniqueConstraint columnNames="username"
+                         constraintName="const_username_administrator"
+                         tableName="administrator"/>
+  </changeSet>
+
+  <changeSet author="az" id="update views, add administrator">
+
+    <createView replaceIfExists="true" viewName="login_roles">
+      SELECT username, 'CardIssuer' AS role FROM cardissuer
+      UNION SELECT username, 'ApplicationProvider' AS role FROM applicationprovider
+      UNION SELECT username, 'Administrator' AS role FROM administrator
+    </createView>
+
+    <createView replaceIfExists="true" viewName="login_users">
+      SELECT username, passwordhash, salt, iterations FROM cardissuer WHERE passwordhash IS NOT NULL
+      UNION SELECT username, passwordhash, salt, iterations FROM applicationprovider WHERE passwordhash IS NOT NULL
+      UNION SELECT username, passwordhash, salt, iterations FROM administrator WHERE passwordhash IS NOT NULL
+    </createView>
+
+    <rollback>
+      <createView replaceIfExists="true" viewName="login_roles">
+        SELECT username, 'CardIssuer' AS role FROM cardissuer UNION SELECT username, 'ApplicationProvider' AS role FROM applicationprovider
+      </createView>
+
+      <createView replaceIfExists="true" viewName="login_users">
+        SELECT ci.username, ci.passwordhash, ci.salt, ci.iterations FROM cardissuer ci WHERE ci.passwordhash IS NOT NULL UNION SELECT
+        ap.username, ap.passwordhash, ap.salt, ap.iterations FROM applicationprovider ap WHERE ap.passwordhash IS NOT NULL
+      </createView>
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.xyz</groupId>
+	<artifactId>protobuf-test</artifactId>
+	<version>0.01-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>protobuf-test</name>
+
+	<properties>
+		<protobuf.version>2.6.1</protobuf.version>
+	</properties>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>kr.motd.maven</groupId>
+				<artifactId>os-maven-plugin</artifactId>
+				<version>1.2.3.Final</version>
+			</extension>
+		</extensions>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.4.0</version>
+				<executions>
+					<!-- Maven execute -> generate-sources :: ProtocolBuffers compile -->
+					<execution>
+						<id>running_protobuf_compiler</id>
+						<phase>generate-sources</phase>
+						<configuration>
+							<executable>
+								${project.basedir}/src/main/resources/protobuf-compiler/protoc-${protobuf.version}-${os.detected.classifier}.exe
+							</executable>
+							<arguments>
+								<argument>--java_out=${project.basedir}/src/main/java</argument>
+								<argument>--proto_path=${project.basedir}/src/main/resources/protobuf</argument>
+								<argument>${project.basedir}/src/main/resources/protobuf/person.proto</argument>
+							</arguments>
+						</configuration>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>2.6.1</version>
+		</dependency>
+	</dependencies>
+
+</project>

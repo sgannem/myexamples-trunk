@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="migrate_to_PBKDF2WithHmacSHA512.xml">
+
+  <changeSet author="az" id="migrate administrators to PBKDF2WithHmacSHA512" dbms="postgresql">
+    <update tableName="administrator">
+      <!-- Password is "Test123" -->
+      <column name="passwordhash"
+              value="\x07EF1745DDB24687155C5341E3299A1FF6C73C6E0D18C696D48CAB97142AF8DC9C353891613D882AD55EDDF0574B5F7C609B66F44936F3DC4554BF77581B50E2"/>
+      <column name="iterations" value="8192"/>
+      <column name="salt" value="\xdf4f66e1693b1ad58661e9a7550d5861"/>
+      <where>passwordhash IS NOT NULL</where>
+    </update>
+
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="migrate cardissuers to PBKDF2WithHmacSHA512" dbms="postgresql">
+    <update tableName="cardissuer">
+      <!-- Password is "Test123" -->
+      <column name="passwordhash"
+              value="\x07EF1745DDB24687155C5341E3299A1FF6C73C6E0D18C696D48CAB97142AF8DC9C353891613D882AD55EDDF0574B5F7C609B66F44936F3DC4554BF77581B50E2"/>
+      <column name="iterations" value="8192"/>
+      <column name="salt" value="\xdf4f66e1693b1ad58661e9a7550d5861"/>
+      <where>passwordhash IS NOT NULL</where>
+    </update>
+
+    <rollback/>
+  </changeSet>
+
+  <changeSet author="az" id="migrate application providers to PBKDF2WithHmacSHA512" dbms="postgresql">
+    <update tableName="applicationprovider">
+      <!-- Password is "Test123" -->
+      <column name="passwordhash"
+              value="\x07EF1745DDB24687155C5341E3299A1FF6C73C6E0D18C696D48CAB97142AF8DC9C353891613D882AD55EDDF0574B5F7C609B66F44936F3DC4554BF77581B50E2"/>
+      <column name="iterations" value="8192"/>
+      <column name="salt" value="\xdf4f66e1693b1ad58661e9a7550d5861"/>
+      <where>passwordhash IS NOT NULL</where>
+    </update>
+
+    <rollback/>
+  </changeSet>
+</databaseChangeLog>

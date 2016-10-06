@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="changeset-artf112092.xml">
+
+  <changeSet author="az" id="add table applicationinstallation">
+    <createTable tableName="applicationinstallation">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+
+      <column name="version" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="application_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="cardissuer_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="installedon" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseColumnNames="application_id"
+                             baseTableName="applicationinstallation"
+                             constraintName="fk_applicationinstallation_application_id"
+                             onDelete="CASCADE"
+                             onUpdate="RESTRICT"
+                             referencedColumnNames="id"
+                             referencedTableName="application"/>
+
+    <addForeignKeyConstraint baseColumnNames="cardissuer_id"
+                             baseTableName="applicationinstallation"
+                             constraintName="fk_applicationinstallation_cardissuer_id"
+                             onDelete="CASCADE"
+                             onUpdate="RESTRICT"
+                             referencedColumnNames="id"
+                             referencedTableName="cardissuer"/>
+  </changeSet>
+
+  <changeSet author="az" id="remove primary key administrator.username for postgres db">
+    <preConditions onFail="CONTINUE">
+      <dbms type="PostgreSQL"/>
+    </preConditions>
+
+    <dropPrimaryKey tableName="administrator" constraintName="pk_administrator"/>
+
+    <rollback>
+      <addPrimaryKey tableName="administrator" columnNames="username" constraintName="pk_administrator"/>
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="remove primary key administrator.username for H2 (test) db">
+    <preConditions onFail="CONTINUE">
+      <dbms type="H2"/>
+    </preConditions>
+
+    <dropUniqueConstraint tableName="administrator" constraintName="const_username_administrator"/>
+    <dropPrimaryKey tableName="administrator" constraintName="username"/>
+  </changeSet>
+
+  <changeSet author="az" id="add field administrator.id, use it as primary key">
+    <!--<dropUniqueConstraint tableName="administrator" constraintName="const_username_administrator"/>-->
+    <!--<dropPrimaryKey tableName="administrator" constraintName="username"/>-->
+
+    <addColumn tableName="administrator">
+      <column name="id" type="BIGINT" defaultValue="1">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+
+    <dropDefaultValue tableName="administrator" columnName="id"/>
+    <addPrimaryKey tableName="administrator" columnNames="id"/>
+
+    <!--<addUniqueConstraint columnNames="username"-->
+    <!--constraintName="const_username_administrator"-->
+    <!--tableName="administrator"/>-->
+
+    <rollback>
+      <dropColumn tableName="administrator" columnName="id"/>
+
+      <!--<addPrimaryKey tableName="administrator" columnNames="username"/>-->
+      <!--<addUniqueConstraint tableName="administrator" columnNames="username" constraintName="username"/>-->
+    </rollback>
+  </changeSet>
+
+  <changeSet author="az" id="add table reportlog">
+    <createTable tableName="reportlog">
+      <column name="id" type="BIGINT">
+        <constraints primaryKey="true" nullable="false"/>
+      </column>
+
+      <column name="administrator_id" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="senttimestamp" type="BIGINT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="reportmonth" type="INT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="reportyear" type="INT">
+        <constraints nullable="false"/>
+      </column>
+
+      <column name="type" type="VARCHAR(20)">
+        <constraints nullable="false"/>
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseColumnNames="administrator_id"
+                             baseTableName="reportlog"
+                             constraintName="fk_reportlog_administrator_id"
+                             onDelete="CASCADE"
+                             onUpdate="RESTRICT"
+                             referencedColumnNames="id"
+                             referencedTableName="administrator"/>
+  </changeSet>
+
+  <changeSet id="add field administrator.email" author="az">
+    <addColumn tableName="administrator">
+      <column name="email" type="VARCHAR(50)"/>
+    </addColumn>
+  </changeSet>
+
+  <changeSet id="add field administrator.version" author="az">
+    <addColumn tableName="administrator">
+      <column name="version" type="BIGINT" defaultValue="0">
+        <constraints nullable="false"/>
+      </column>
+    </addColumn>
+  </changeSet>
+
+  <changeSet author="az" id="remove unnecessary field ApplicationInstallation.version">
+    <dropColumn tableName="applicationinstallation" columnName="version"/>
+
+    <rollback>
+      <addColumn tableName="applicationinstallation">
+        <column name="version" type="BIGINT" defaultValue="0">
+          <constraints nullable="false"/>
+        </column>
+      </addColumn>
+    </rollback>
+  </changeSet>
+</databaseChangeLog>

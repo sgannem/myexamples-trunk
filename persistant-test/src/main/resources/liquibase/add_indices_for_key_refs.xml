@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd"
+                   logicalFilePath="add_indices_for_key_refs.xml">
+
+  <changeSet author="az" id="add index on cardissuer.damauthkeyref_id">
+    <createIndex tableName="cardissuer" indexName="idx_cardissuer_damauthkeyref_id">
+      <column name="damauthkeyref_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on cardissuer.dammackeyref_id">
+    <createIndex tableName="cardissuer" indexName="idx_cardissuer_dammackeyref_id">
+      <column name="dammackeyref_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on cardissuer.damenckeyref_id">
+    <createIndex tableName="cardissuer" indexName="idx_cardissuer_damenckeyref_id">
+      <column name="damenckeyref_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on cardissuer.ev1masterkeyref_id">
+    <createIndex tableName="cardissuer" indexName="idx_cardissuer_ev1masterkeyref_id">
+      <column name="ev1masterkeyref_id"/>
+    </createIndex>
+  </changeSet>
+
+  <changeSet author="az" id="add index on application.applicationmasterkey_id">
+    <createIndex tableName="application" indexName="idx_application_applicationmasterkey_id">
+      <column name="applicationmasterkey_id"/>
+    </createIndex>
+  </changeSet>
+</databaseChangeLog>
